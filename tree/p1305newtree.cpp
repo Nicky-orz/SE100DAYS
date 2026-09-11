@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-const int Maxn=1000005;
+const int Maxn=1005;
 struct Node{
     int data;
     Node* left;
@@ -11,7 +11,7 @@ struct Node{
 Node* pos[Maxn];
 
 void leftins(int fat,int val){
-    if(val == 0)
+    if(val == int('*'))
         return;
     Node* newNode = nullptr;
     if(pos[val] == nullptr){
@@ -25,7 +25,7 @@ void leftins(int fat,int val){
 }
 
 void rightins(int fat,int val){
-    if(val == 0)
+    if(val == int('*'))
         return;
     Node* newNode = nullptr;
     if(pos[val] == nullptr){
@@ -38,33 +38,31 @@ void rightins(int fat,int val){
     pos[fat]->right = newNode;
 }
 
-int maxdepth(int fat){
-    Node* root = pos[fat];
-    if (!root) return 0;
-    stack<pair<Node*, int>> st;
-    st.push({root, 1});
-    int maxDep = 0;
-    while (!st.empty()) {
-        Node* cur = st.top().first;
-        int dep = st.top().second;
-        st.pop();
-        maxDep = max(maxDep, dep);
-        if (cur->left)  st.push({cur->left, dep + 1});
-        if (cur->right) st.push({cur->right, dep + 1});
-    }
-    return maxDep;
+void pre(Node* root){
+    if(!root)
+        return;
+    cout<<char(root->data);
+    pre(root->left);
+    pre(root->right);
 }
 int main(){
-    int n;
+    int n,rootNode;
     cin>>n;
     for(int i=1;i<=n;i++){
-        int l,r;
-        cin>>l>>r;
-        if(!pos[i])
-            pos[i] = new Node(i);
-        leftins(i,l);
-        rightins(i,r);
+        string tmp;
+        cin>>tmp;
+
+        int ro = int(tmp[0]);
+        int l = int(tmp[1]);
+        int r = int(tmp[2]);
+
+        if(i == 1)
+            rootNode = ro;
+        if(!pos[ro])
+            pos[ro] = new Node(ro);
+        leftins(ro,l);
+        rightins(ro,r);
     }
-    cout<<maxdepth(1);
+    pre(pos[rootNode]);
     return 0;
 }
