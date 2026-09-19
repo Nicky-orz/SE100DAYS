@@ -1,10 +1,10 @@
 # SE100DAYS
-This is a record about a new software engineering student, documenting his 100 days of programming experience
 
+This is a record about a new software engineering student, documenting his 100 days of programming experience.
 
-这是一个记录软工新生学习编程100天的仓库
+这是一个记录软工新生学习编程 100 天的仓库。
 
-> 文件按算法分类存放，命名规则为 `题目编号 + 简短英文描述`（如 `p2440.cpp`、`p1536villagepath.cpp`）。
+> 文件按算法分类存放（如 `misc/`、`search/`、`tree/`、`set/`），命名规则为 `题目编号 + 简短英文描述`（如 `p2440.cpp`、`p1536villagepath.cpp`）。
 
 ---
 
@@ -12,62 +12,66 @@ This is a record about a new software engineering student, documenting his 100 d
 
 | Day | 日期 | 题目数 | 主要内容 | 状态 |
 | --- | --- | ---: | --- | --- |
-| Day01 | 08-26 | 2 | 模拟、统计 | 已完成 |
-| Day02 | 08-27 | 2 | 字符串、枚举、质数 | 已完成 |
-| Day03 | 08-28 | 2 | 高精度、模拟 | 已完成 |
+| Day01 | 08-26 | 2 | 模拟、数组、统计 | 已完成 |
+| Day02 | 08-27 | 2 | 字符串、枚举、质数判断 | 已完成 |
+| Day03 | 08-28 | 2 | 高精度加法、模拟 | 已完成 |
 | Day04 | 08-29 | 0 | 休息 | 休息爽 |
 | Day05 | 08-30 | 1 | 高精度乘法 | 已完成 |
 | Day06 | 08-31 | 1 | 递归、字符串解析 | 已完成 |
-| Day07 | 09-01 | 2 | 贪心、递推 | 已完成 |
-| Day08 | 09-02 | 4 | 逆序对、DP、分治、二分 | 已完成 |
-| Day09 | 09-03 | 1 | 快速幂、栈 | 已完成 |
-| Day10 | 09-04 | 1 | DFS / 连通块 | 已完成 |
+| Day07 | 09-01 | 2 | 贪心、递推 / DP | 已完成 |
+| Day08 | 09-02 | 4 | 归并排序、DP、分治、二分答案 | 已完成 |
+| Day09 | 09-03 | 1 | 快速幂、递归 | 已完成 |
+| Day10 | 09-04 | 1 | DFS、连通块 | 已完成 |
 | Day11 | 09-05 | 0 | 休息 | 休息爽 |
 | Day12 | 09-06 | 3 | BFS、DFS、回溯 | 已完成 |
 | Day13 | 09-07 | 1 | 数组 / STL | 已完成 |
 | Day14 | 09-08 | 3 | 链表、栈、map | 已完成 |
-| Day15 | 09-09 | 2 | 栈、队列 | 已完成 |
-| Day16 | 09-10 | 1 | 二叉树 | 已完成 |
+| Day15 | 09-09 | 2 | 栈、队列、模拟 | 已完成 |
+| Day16 | 09-10 | 1 | 二叉树、模拟 | 已完成 |
 | Day17 | 09-11 | 4 | 二叉树遍历 | 已完成 |
 | Day18 | 09-12 | 1 | 二叉树遍历计数 | 已完成 |
 | Day19 | 09-13 | 1 | 二叉搜索树 | 已完成 |
-| Day20 | 09-14 | 1 | 二叉树深度 / LCA | 已完成 |
-| Day21 | 09-15 | 1 | 二叉树绘制 / 模拟 | 已完成 |
+| Day20 | 09-14 | 1 | 二叉树深度、宽度、LCA | 已完成 |
+| Day21 | 09-15 | 1 | 二叉树绘制、模拟 | 已完成 |
 | Day22 | 09-16 | 1 | 并查集 | 已完成 |
 | Day23 | 09-17 | 2 | 字符串哈希、并查集 | 已完成 |
-| Day24 | 09-18 | 3 | map / set / 哈希 | 已完成 |
-(一周写一次总览)
+| Day24 | 09-18 | 3 | map、set、哈希 | 已完成 |
+| Day25 | 09-19 | 2 | 哈希表（开放寻址法） | 已完成 |
+
+---
 
 ## Day01 - 08-26
 
-- 题目：
-  - [P5730](https://www.luogu.com.cn/problem/P5730) 【深基5.例10】显示屏
-  - [P1554](https://www.luogu.com.cn/problem/P1554) [USACO06DEC] 梦中的统计 Dream Counting B
-- 知识点：模拟、数组、统计
+- [P5730](https://www.luogu.com.cn/problem/P5730) 【深基5.例10】显示屏
+- [P1554](https://www.luogu.com.cn/problem/P1554) [USACO06DEC] 梦中的统计 Dream Counting B
+
+- 知识点：模拟、二维字符输出、数位拆分与统计
 - 文件：`misc/p5730.cpp`、`misc/p1554.cpp`
+- 易错点：数字点阵用查表法输出，注意每个数字之间要补分隔列；循环变量必须初始化（`for(int i;i<10;i++)` 属于漏写初始化）
 - 状态：已完成
 
 ---
 
 ## Day02 - 08-27
 
-- 题目：
-  - [P1125](https://www.luogu.com.cn/problem/P1125) [NOIP 2008 提高组] 笨小猴
-  - [P2141](https://www.luogu.com.cn/problem/P2141) [NOIP 2014 普及组] 珠心算测验
-- 知识点：字符串、字符统计、质数判断、枚举
+- [P1125](https://www.luogu.com.cn/problem/P1125) [NOIP 2008 提高组] 笨小猴
+- [P2141](https://www.luogu.com.cn/problem/P2141) [NOIP 2014 普及组] 珠心算测验
+
+- 知识点：字符串、字符计数、质数判定、枚举 + 标记数组
 - 文件：`misc/p1125.cpp`、`misc/p2141.cpp`
+- 易错点：最小次数只在出现过的字母中统计；差值 0、1 需要特判为 `No Answer`；枚举两数之和要用标记数组去重，避免同一和重复计数
 - 状态：已完成
 
 ---
 
 ## Day03 - 08-28
 
-- 题目：
-  - [P1601](https://www.luogu.com.cn/problem/P1601) 高精度加法
-  - [P1067](https://www.luogu.com.cn/problem/P1067) [NOIP 2009 普及组] 多项式输出
+- [P1601](https://www.luogu.com.cn/problem/P1601) 高精度加法
+- [P1067](https://www.luogu.com.cn/problem/P1067) [NOIP 2009 普及组] 多项式输出
+
 - 知识点：高精度、模拟、边界处理
 - 文件：`misc/p1601.cpp`、`misc/p1067.cpp`
-- 易错点：多项式系数为 0、1、-1 等特殊情况
+- 易错点：多项式系数为 0、1、-1 及最高次项的特殊处理；高精度加法最高位进位后数组长度要加一
 - 状态：已完成
 
 ---
@@ -80,70 +84,70 @@ This is a record about a new software engineering student, documenting his 100 d
 
 ## Day05 - 08-30
 
-- 题目：
-  - [P1303](https://www.luogu.com.cn/problem/P1303) A*B Problem
+- [P1303](https://www.luogu.com.cn/problem/P1303) A*B Problem
+
 - 知识点：高精度乘法
 - 文件：`misc/p1303.cpp`
-- 易错点：进位、前导零
+- 易错点：乘法结果长度取 `len(a)+len(b)-1` 后仍需处理最高位进位；任一因子为 0 时直接输出 0，避免输出前导零
 - 状态：已完成
 
 ---
 
 ## Day06 - 08-31
 
-- 题目：
-  - [P1928](https://www.luogu.com.cn/problem/P1928) 外星密码
-- 知识点：递归、字符串解析
+- [P1928](https://www.luogu.com.cn/problem/P1928) 外星密码
+
+- 知识点：递归、字符串解析、区间替换
 - 文件：`misc/p1928.cpp`
-- 易错点：括号嵌套、数字读取
+- 易错点：方括号可以嵌套，需反复展开直到字符串不再变化；数字可能是一位或两位，读取时要判断后一位是否仍是数字
 - 状态：已完成
 
 ---
 
 ## Day07 - 09-01
 
-- 题目：
-  - [P1803](https://www.luogu.com.cn/problem/P1803) 凌乱的yyy / 线段覆盖
-  - [P1990](https://www.luogu.com.cn/problem/P1990) 覆盖墙壁
+- [P1803](https://www.luogu.com.cn/problem/P1803) 凌乱的yyy / 线段覆盖
+- [P1990](https://www.luogu.com.cn/problem/P1990) 覆盖墙壁
+
 - 知识点：贪心、区间调度、递推 / DP
 - 文件：`greedy/p1803.cpp`、`dp/p1990.cpp`
-- 易错点：贪心排序规则、递推边界
+- 易错点：贪心必须按右端点排序，再依次选择可选区间；递推要用多个状态分别表示墙面的不同填充形态，并注意取模 10000
 - 状态：已完成
 
 ---
 
 ## Day08 - 09-02
 
-- 题目：
-  - [P1908](https://www.luogu.com.cn/problem/P1908) 逆序对
-  - [P1115](https://www.luogu.com.cn/problem/P1115) 最大子段和
-  - [P1228](https://www.luogu.com.cn/problem/P1228) 地毯填补问题
-  - [P2440](https://www.luogu.com.cn/problem/P2440) 木材加工
-- 知识点：归并排序、DP、分治、二分答案
+- [P1908](https://www.luogu.com.cn/problem/P1908) 逆序对
+- [P1115](https://www.luogu.com.cn/problem/P1115) 最大子段和
+- [P1228](https://www.luogu.com.cn/problem/P1228) 地毯填补问题
+- [P2440](https://www.luogu.com.cn/problem/P2440) 木材加工
+
+- 知识点：归并排序、分治、DP、二分答案
 - 文件：`dc/p1908.cpp`、`dc/p1115.cpp`、`search/p1228.cpp`、`binary_search/p2440.cpp`
-- 易错点：二分边界、递归分治坐标
+- 易错点：逆序对计数用 `long long`；分治求最大子段和要分别维护左后缀与右前缀最优值；地毯填补的四个象限坐标不能写错；二分答案注意上下界与可行性判断
 - 状态：已完成
 
 ---
 
 ## Day09 - 09-03
 
-- 题目：
-  - [P1226](https://www.luogu.com.cn/problem/P1226) 【模板】快速幂
-- 知识点：快速幂、栈
+- [P1226](https://www.luogu.com.cn/problem/P1226) 【模板】快速幂
+
+- 知识点：快速幂、递归、取模运算
 - 文件：`dc/p1226.cpp`
-- 易错点：取模
+- 易错点：每步乘法都要取模，指数为 0 时结果应为 1（当前实现按 `exp==1` 递归出口处理）；底数先对模数取模
 - 状态：已完成
 
 ---
 
 ## Day10 - 09-04
 
-- 题目：
-  - [P1596](https://www.luogu.com.cn/problem/P1596) [USACO10OCT] Lake Counting S
-- 知识点：DFS / BFS、连通块
+- [P1596](https://www.luogu.com.cn/problem/P1596) [USACO10OCT] Lake Counting S
+
+- 知识点：DFS、连通块、方向数组
 - 文件：`search/p1596.cpp`
-- 易错点：方向数组、边界判断
+- 易错点：本题是八连通，方向数组要有 8 个方向；搜索前先判边界再访问数组
 - 状态：已完成
 
 ---
@@ -158,60 +162,60 @@ This is a record about a new software engineering student, documenting his 100 d
 
 ### 从今天开始正式建仓，题目按算法分类归档。
 
-- 题目：
-  - [P1825](https://www.luogu.com.cn/problem/P1825) [USACO11OPEN] Corn Maze S
-  - [P1162](https://www.luogu.com.cn/problem/P1162) 填涂颜色
-  - [P1219](https://www.luogu.com.cn/problem/P1219) [USACO1.5] 八皇后 Checker Challenge
+- [P1825](https://www.luogu.com.cn/problem/P1825) [USACO11OPEN] Corn Maze S
+- [P1162](https://www.luogu.com.cn/problem/P1162) 填涂颜色
+- [P1219](https://www.luogu.com.cn/problem/P1219) [USACO1.5] 八皇后 Checker Challenge
+
 - 知识点：BFS、DFS、回溯、迷宫、连通块
 - 文件：`search/p1825CornMazeS.cpp`、`search/p1162fillcolor.cpp`、`search/p1219CheckerChallenge.cpp`
-- 易错点：BFS 访问标记、八皇后对角线判断
+- 易错点：传送门可在入队或出队时任一端瞬时传送，注意传送后坐标的更新与步数不变；BFS 访问标记要在入队时打，避免重复入队；填涂颜色要先判断是否触碰到边界，只有完全被包围的 0 才染色；八皇后用两条对角线条件 `i+x==a[j]+j`、`x-i==j-a[j]` 判冲突
 - 状态：已完成
 
 ---
 
 ## Day13 - 09-07
 
-- 题目：
-  - [P3156](https://www.luogu.com.cn/problem/P3156) 【深基15.例1】询问学号
-- 知识点：数组、STL
+- [P3156](https://www.luogu.com.cn/problem/P3156) 【深基15.例1】询问学号
+
+- 知识点：数组、STL、下标映射
 - 文件：`linealist/p3156requestnumber.cpp`
-- 易错点：下标从 1 开始
+- 易错点：题目中学号从 1 开始编号，数组下标要与之一致；数据规模较大建议用 `scanf` / `printf` 或关闭同步流
 - 状态：已完成
 
 ---
 
 ## Day14 - 09-08
 
-- 题目：
-  - [P1160](https://www.luogu.com.cn/problem/P1160) 队列安排
-  - [P1449](https://www.luogu.com.cn/problem/P1449) 后缀表达式
-  - [P3613](https://www.luogu.com.cn/problem/P3613) 【深基15.例2】寄包柜
-- 知识点：链表、栈、map / vector
+- [P1160](https://www.luogu.com.cn/problem/P1160) 队列安排
+- [P1449](https://www.luogu.com.cn/problem/P1449) 后缀表达式
+- [P3613](https://www.luogu.com.cn/problem/P3613) 【深基15.例2】寄包柜
+
+- 知识点：双向链表、栈、map / vector
 - 文件：`linealist/p1160queuearrangement.cpp`、`linealist/p1449postfixexpression.cpp`、`linealist/p3613parcellocker.cpp`
-- 易错点：链表插入删除、后缀表达式读入
+- 易错点：链表插入要区分插在左边还是右边，删除头结点时要同时更新 `head` 与后继的 `prev`；同一元素可能被重复删除，需要判空；后缀表达式出栈顺序为先弹出右操作数，`-` 和 `/` 不能反；存放 0 与删除操作要区分处理
 - 状态：已完成
 
 ---
 
 ## Day15 - 09-09
 
-- 题目：
-  - [P1241](https://www.luogu.com.cn/problem/P1241) 括号序列
-  - [P1540](https://www.luogu.com.cn/problem/P1540) [NOIP 2010 提高组] 机器翻译
+- [P1241](https://www.luogu.com.cn/problem/P1241) 括号序列
+- [P1540](https://www.luogu.com.cn/problem/P1540) [NOIP 2010 提高组] 机器翻译
+
 - 知识点：栈、队列、模拟
 - 文件：`linealist/p1241bracketsequence.cpp`、`linealist/p1540machinetranslate.cpp`
-- 易错点：括号匹配规则、队列容量
+- 易错点：括号匹配要在原串上标记已配对的括号，未配对的括号补齐成对；机器翻译的队列容量为上限，满了要先弹出队首并把它从标记数组中清除
 - 状态：已完成
 
 ---
 
 ## Day16 - 09-10
 
-- 题目：
-  - [P4715](https://www.luogu.com.cn/problem/P4715) 【深基16.例1】淘汰赛
-- 知识点：二叉树、模拟
+- [P4715](https://www.luogu.com.cn/problem/P4715) 【深基16.例1】淘汰赛
+
+- 知识点：二叉树、模拟、分组比较
 - 文件：`tree/p4715knockoutcompetition.cpp`
-- 易错点：节点编号与比赛轮次
+- 易错点：选手数为 `2^n`，左右两个半区各 `2^(n-1)` 人；注意 `1 << n-1` 的优先级等价于 `1 << (n-1)`，建议显式加括号提高可读性；输出的是亚军编号
 - 状态：已完成
 
 ---
@@ -220,109 +224,108 @@ This is a record about a new software engineering student, documenting his 100 d
 
 ### 二叉树专题集中训练
 
-- 题目：
-  - [P1305](https://www.luogu.com.cn/problem/P1305) 新二叉树
-  - [P1030](https://www.luogu.com.cn/problem/P1030) [NOIP 2001 普及组] 求先序排列
-  - [P1827](https://www.luogu.com.cn/problem/P1827) [USACO3.4] 美国血统 American Heritage
-  - [P4913](https://www.luogu.com.cn/problem/P4913) 【深基16.例3】二叉树深度
-- 知识点：二叉树遍历、先序 / 中序 / 后序、深度
+- [P1305](https://www.luogu.com.cn/problem/P1305) 新二叉树
+- [P1030](https://www.luogu.com.cn/problem/P1030) [NOIP 2001 普及组] 求先序排列
+- [P1827](https://www.luogu.com.cn/problem/P1827) [USACO3.4] 美国血统 American Heritage
+- [P4913](https://www.luogu.com.cn/problem/P4913) 【深基16.例3】二叉树深度
+
+- 知识点：二叉树遍历、先序 / 中序 / 后序、递归划分区间、树的深度
 - 文件：`tree/p1305newtree.cpp`、`tree/p1030forpre.cpp`、`tree/p1827AmericanHeritage.cpp`、`tree/p4913treedepth.cpp`
-- 易错点：遍历区间划分、递归边界
+- 易错点：由中序 + 后序求先序时根在后序末尾，由中序 + 先序求后序时根在先序开头，左右子树的区间长度必须对应；节点可能先作为孩子出现，建树时要先查是否已创建；数据规模大时求深度用迭代而不要递归
 - 状态：已完成
 
 ---
 
 ## Day18 - 09-12
 
-- 题目：
-  - [P1229](https://www.luogu.com.cn/problem/P1229) 遍历问题
-- 知识点：二叉树遍历、计数
+- [P1229](https://www.luogu.com.cn/problem/P1229) 遍历问题
+
+- 知识点：二叉树遍历、计数、组合
 - 文件：`linealist/p1229orderproblem.cpp`
-- 易错点：只有一个子节点时的不确定性
+- 易错点：只有单个儿子的节点会造成中序遍历不唯一，统计这类节点个数 `k`，答案为 `2^k`，结果可能很大需用 `long long` 输出
 - 状态：已完成
 
 ---
 
 ## Day19 - 09-13
 
-- 题目：
-  - [P5076](https://www.luogu.com.cn/problem/P5076) 【深基16.例7】普通二叉树（简化版）
-- 知识点：二叉搜索树、STL
+- [P5076](https://www.luogu.com.cn/problem/P5076) 【深基16.例7】普通二叉树（简化版）
+
+- 知识点：二叉搜索树、插入、排名 / 第 k 小、前驱 / 后继
 - 文件：`tree/p5076simpletree.cpp`
-- 易错点：前驱后继查询、重复元素
+- 易错点：排名查的是小于该值的元素个数加一；前驱 / 后继在找不到时要用正负无穷作为哨兵；插入时重复元素不重复建点
 - 状态：已完成
 
 ---
 
 ## Day20 - 09-14
 
-- 题目：
-  - [P3884](https://www.luogu.com.cn/problem/P3884) [JLOI2009] 二叉树问题
-- 知识点：二叉树深度、宽度、LCA
+- [P3884](https://www.luogu.com.cn/problem/P3884) [JLOI2009] 二叉树问题
+
+- 知识点：二叉树深度、宽度、最近公共祖先（LCA）、路径长度
 - 文件：`tree/p3884treeproblem.cpp`
-- 易错点：层宽统计、最近公共祖先
+- 易错点：宽度统计的是同一层节点数的最大值，根在第 1 层；本题向上走一条边距离为 2、向下为 1，求距离时要区分方向；搜索需要 `vis` 标记防止重复访问
 - 状态：已完成
 
 ---
 
 ## Day21 - 09-15
 
-- 题目：
-  - [P1185](https://www.luogu.com.cn/problem/P1185) 绘制二叉树
-- 知识点：二叉树、模拟、递归绘制
+- [P1185](https://www.luogu.com.cn/problem/P1185) 绘制二叉树
+
+- 知识点：二叉树、递归绘制、字符图形模拟
 - 文件：`tree/p1185drawtree.cpp`
-- 易错点：字符坐标、递归层次
+- 易错点：斜杠与节点的行列坐标要一层层累加，不同层的空格数由宽度数组决定；输出每行要补齐到最大宽度；被删除的节点及其子树都不绘制
 - 状态：已完成
 
 ---
 
 ## Day22 - 09-16
 
-- 题目：
-  - [P1551](https://www.luogu.com.cn/problem/P1551) 亲戚
-- 知识点：并查集
+- [P1551](https://www.luogu.com.cn/problem/P1551) 亲戚
+
+- 知识点：并查集、路径压缩、按大小合并
 - 文件：`set/p1551relative.cpp`
-- 易错点：路径压缩、合并方向
+- 易错点：初始化必须把每个人指向自己；合并前先判是否已在同一集合；递归 `find` 时要把父节点直接指向根
 - 状态：已完成
 
 ---
 
 ## Day23 - 09-17
 
-- 题目：
-  - [P3370](https://www.luogu.com.cn/problem/P3370) 【模板】字符串哈希
-  - [P1536](https://www.luogu.com.cn/problem/P1536) 村村通
-- 知识点：字符串哈希、并查集
+- [P3370](https://www.luogu.com.cn/problem/P3370) 【模板】字符串哈希
+- [P1536](https://www.luogu.com.cn/problem/P1536) 村村通
+
+- 知识点：字符串哈希、自然溢出、并查集、连通块计数
 - 文件：`set/p3370stringhash.cpp`、`set/p1536villagepath.cpp`
-- 易错点：哈希冲突、连通块计数
+- 易错点：字符串哈希用 `unsigned long long` 自然溢出并选取合适的进制（如 131）；统计不同哈希值要先排序再去重；村村通统计根节点个数后答案是连通块数减一，且要注意多组数据读到 0 结束
 - 状态：已完成
 
 ---
 
 ## Day24 - 09-18
 
-### 今天开始把C语言OJ的作业也上传上来
+### 今天开始把 C 语言 OJ 的作业也上传上来
 
-- 题目：
-  - [P5266](https://www.luogu.com.cn/problem/P5266) 【深基17.例6】学籍管理
-  - [P5250](https://www.luogu.com.cn/problem/P5250) 【深基17.例5】木材仓库
-  - [P3405](https://www.luogu.com.cn/problem/P3405) [USACO16DEC] Cities and States S
-- 知识点：map、set、哈希、STL
-- 文件：`set/p5266managefile.cpp`、`set/p5250woodwarehouse.cpp`、`set/p3405CitiesandStates.cpp`
-- 易错点：map 查找、set 前驱后继、字符串组合哈希
+- [P5266](https://www.luogu.com.cn/problem/P5266) 【深基17.例6】学籍管理
+- [P5250](https://www.luogu.com.cn/problem/P5250) 【深基17.例5】木材仓库
+- [P3405](https://www.luogu.com.cn/problem/P3405) [USACO16DEC] Cities and States S
+
+- 知识点：map、set、哈希、STL、前驱后继查询
+- 文件：`set/p5266managefile.cpp`、`set/p5250woodwarehouse.cpp`、`set/p3405CitiesandStates.cpp`、`oj_pratice/test.c`、`oj_pratice/cpl26-environment.txt`
+- 易错点：`map` 要在查找或删除前用 `count` 判存在；`set` 求最近木材时用 `lower_bound` 找后继，注意迭代器不能减到 `begin()` 之前以及集合为空的情况，距离相同时取较小的；城市与州名的哈希组合要以州为行、城市为列，且要排除州名与城市名完全相同的情况，最后答案除以 2
 - 状态：已完成
 
 ---
+
 ## Day25 - 09-19
 
-### 从今天开始写README!
+### 今天开始写 README
 
-- 题目：
-  - [P1102](https://www.luogu.com.cn/problem/P1102) A-B 数对
-  - [P1918](https://www.luogu.com.cn/problem/P1918) 保龄球
-- 知识点：哈希表开放寻址法
+- [P1102](https://www.luogu.com.cn/problem/P1102) A-B 数对
+- [P1918](https://www.luogu.com.cn/problem/P1918) 保龄球
+
+- 知识点：哈希表、开放寻址法、线性探测、值到下标的映射与计数
 - 文件：`set/p1102aminusb.cpp`、`set/p1918bowling.cpp`
-- 易错点：哈希键类型选用
+- 易错点：手写哈希用 `key = -1` 作空位标记，要求数据范围内不出现 -1；下标取模写成 `(x % M + M) % M`，避免负数下标；A-B 数对必须先把所有数全部插入再统一查询，边插边查会漏解，且键值和答案都要用 `long long`，否则 `a[i] + c` 可能溢出；题目保证每个位置的瓶子数互不相同且询问的瓶子数一定存在，所以发球后不需要删除元素
 - 状态：已完成
-
----
