@@ -37,6 +37,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day23 | 09-17 | 2 | 字符串哈希、并查集 | 已完成 |
 | Day24 | 09-18 | 3 | map、set、哈希 | 已完成 |
 | Day25 | 09-19 | 2 | 哈希表（开放寻址法） | 已完成 |
+| Day26 | 09-20 | 1 | 扩展域并查集、贪心 | 已完成 |
 
 ---
 
@@ -328,4 +329,15 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：哈希表、开放寻址法、线性探测、值到下标的映射与计数
 - 文件：`set/p1102aminusb.cpp`、`set/p1918bowling.cpp`
 - 易错点：手写哈希用 `key = -1` 作空位标记，要求数据范围内不出现 -1；下标取模写成 `(x % M + M) % M`，避免负数下标；A-B 数对必须先把所有数全部插入再统一查询，边插边查会漏解，且键值和答案都要用 `long long`，否则 `a[i] + c` 可能溢出；题目保证每个位置的瓶子数互不相同且询问的瓶子数一定存在，所以发球后不需要删除元素
+- 状态：已完成
+
+---
+
+## Day26 - 09-20
+
+- [P1525](https://www.luogu.com.cn/problem/P1525) [NOIP 2010 提高组] 关押罪犯
+
+- 知识点：扩展域并查集（种类并查集）、贪心、排序、矛盾关系判定
+- 文件：`set/p1525criminals.cpp`
+- 易错点：最初按点贪心（把每个人放入使集合内最大矛盾更小的监狱）会 WA 且 TLE，忽略了矛盾值相同时的分支；正解用扩展域并查集，`i` 与 `i+n` 分别表示 i 在 A、B 两监狱，元素代表同真假的命题；关系按矛盾值从大到小排序，第一个无法满足的关系值即为答案，全部可满足时输出 0
 - 状态：已完成
