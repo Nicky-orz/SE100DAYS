@@ -38,7 +38,8 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day24 | 09-18 | 3 | map、set、哈希 | 已完成 |
 | Day25 | 09-19 | 2 | 哈希表（开放寻址法） | 已完成 |
 | Day26 | 09-20 | 1 | 扩展域并查集、贪心 | 已完成 |
-| Day27 | 09-21 | 2 | 扩展域并查集、埃氏筛 | 已完成 |
+| Day27 | 09-21 | 3 | 扩展域并查集、埃氏筛、map 并查集 | 已完成 |
+| Day28 | 09-22 | 3 | 并查集离散化、哈希表、map 去重 | 已完成 |
 
 ---
 
@@ -351,10 +352,24 @@ This is a record about a new software engineering student, documenting his 100 d
 
 - [P1892](https://www.luogu.com.cn/problem/P1892) [BOI2003] 团伙
 - [P1621](https://www.luogu.com.cn/problem/P1621) 集合
+- [P2814](https://www.luogu.com.cn/problem/P2814) 家谱
 
-- 知识点：扩展域并查集、朋友 / 敌人关系、埃氏筛、按质因子合并、连通块计数
-- 文件：`set/p1892gang.cpp`、`set/p1621set.cpp`
-- 易错点：团伙题中朋友直接合并（不能把`q+n`和`p+n`合并），敌人要用扩展域处理（`p` 与 `q+n`、`p+n` 与 `q` 合并），初始化需 `2n` 个元素，统计团伙数只数 `1..n` 并用 `vis` 去重，不能把扩展域节点算进去；集合题先用埃氏筛筛出 ≤ b 的素数，只有质因子 ≥ p 才能合并
+- 知识点：扩展域并查集、朋友 / 敌人关系、埃氏筛、按质因子合并、连通块计数、字符串并查集
+- 文件：`set/p1892gang.cpp`、`set/p1621set.cpp`、`set/p2814familytree.cpp`
+- 易错点：团伙题中朋友直接合并（不能把`q+n`和`p+n`合并），敌人要用扩展域处理（`p` 与 `q+n`、`p+n` 与 `q` 合并），初始化需 `2n` 个元素，统计团伙数只数 `1..n` 并用 `vis` 去重，不能把扩展域节点算进去；集合题先用埃氏筛筛出 ≤ b 的素数，只有质因子 ≥ p 才能合并；家谱题用 `map<string,string>` 实现并查集，`family[x]==x` 即为祖先，`#` 行要更新当前家族并保证名字已初始化，`+` 行以最近的 `anc` 为父亲，`?` 行按 `名字 祖先` 输出
+- 状态：已完成
+
+---
+
+## Day28 - 09-22
+
+- [P1955](https://www.luogu.com.cn/problem/P1955) [NOIP 2015 普及组] 程序自动分析
+- [P4305](https://www.luogu.com.cn/problem/P4305) [JLOI2011] 不重复数字
+- [P3879](https://www.luogu.com.cn/problem/P3879) [TJOI2010] 阅读理解
+
+- 知识点：并查集 + 离散化（map）、哈希表（开放寻址法、线性探测）、map 应用、去重
+- 文件：`set/p1955autoanalysi.cpp`、`set/p4305differenetnumber.cpp`、`set/p3879readingcomprehension.cpp`
+- 易错点：程序自动分析要先合并全部 `xi=xj` 的等式约束、再统一检查 `xi≠xj`，顺序颠倒会误判，下标达 10^9 只能用 map 或离散化，多组数据记得清空 fa 与 sz；不重复数字的开放寻址哈希模数要取质数（如 100003），取模写成 `(x%N+N)%N` 防止负数下标，每组都要 `memset(h,-1)`，模数选得不好会因探测链过长而 TLE；阅读理解按短文编号用 map 存单词可自动去重，查询时遍历 n 篇短文输出编号，数组大小别写成 `10^3`（C++ 中 `^` 是按位异或，不是幂）
 - 状态：已完成
 
 ## 知识体系
@@ -427,7 +442,7 @@ This is a record about a new software engineering student, documenting his 100 d
 
 | 变体 | 作用 |
 | --- | --- |
-| 扩展域并查集 | 把节点拆成多个，表示不同状态 |
+| 扩展域并查集 | 用有限的状态节点，把命题关系翻译成等价合并 |
 |带权并查集|多维护一个“到根的距离”|
 
 #### 二叉树
