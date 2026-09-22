@@ -445,6 +445,8 @@ This is a record about a new software engineering student, documenting his 100 d
 | 扩展域并查集 | 用有限的状态节点，把命题关系翻译成等价合并 |
 |带权并查集|多维护一个“到根的距离”|
 
+扩展域并查集要求状态有限，这里的“状态”指连同分量内部的状态。Eg朋友和敌人
+
 #### 二叉树
 
 - 每个节点最多两个子节点：左孩子、右孩子
@@ -477,6 +479,9 @@ This is a record about a new software engineering student, documenting his 100 d
 - 键唯一
 - C++ map 通常有序，底层红黑树
 - 支持按 key 查找、插入、删除、遍历O(log n)
+
+map可以用来实现并查集，哈希表，只是代价是时间复杂度从O(1)变成O(log n)
+
 
 #### set
 
