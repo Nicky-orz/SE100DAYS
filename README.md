@@ -40,6 +40,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day26 | 09-20 | 1 | 扩展域并查集、贪心 | 已完成 |
 | Day27 | 09-21 | 3 | 扩展域并查集、埃氏筛、map 并查集 | 已完成 |
 | Day28 | 09-22 | 3 | 并查集离散化、哈希表、map 去重 | 已完成 |
+| Day29 | 09-23 | 3 | 图遍历、反向建图、拓扑递推 | 已完成 |
 
 ---
 
@@ -315,7 +316,7 @@ This is a record about a new software engineering student, documenting his 100 d
 - [P3405](https://www.luogu.com.cn/problem/P3405) [USACO16DEC] Cities and States S
 
 - 知识点：map、set、哈希、STL、前驱后继查询
-- 文件：`set/p5266managefile.cpp`、`set/p5250woodwarehouse.cpp`、`set/p3405CitiesandStates.cpp`、`oj_pratice/test.c`、`oj_pratice/cpl26-environment.txt`
+- 文件：`set/p5266managefile.cpp`、`set/p5250woodwarehouse.cpp`、`set/p3405CitiesandStates.cpp`、`oj_pratice/test.c`
 - 易错点：`map` 要在查找或删除前用 `count` 判存在；`set` 求最近木材时用 `lower_bound` 找后继，注意迭代器不能减到 `begin()` 之前以及集合为空的情况，距离相同时取较小的；城市与州名的哈希组合要以州为行、城市为列，且要排除州名与城市名完全相同的情况，最后答案除以 2
 - 状态：已完成
 
@@ -363,6 +364,8 @@ This is a record about a new software engineering student, documenting his 100 d
 
 ## Day28 - 09-22
 
+### 开始写Note来记录在CS50和CPL中学到的知识
+
 - [P1955](https://www.luogu.com.cn/problem/P1955) [NOIP 2015 普及组] 程序自动分析
 - [P4305](https://www.luogu.com.cn/problem/P4305) [JLOI2011] 不重复数字
 - [P3879](https://www.luogu.com.cn/problem/P3879) [TJOI2010] 阅读理解
@@ -370,6 +373,19 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：并查集 + 离散化（map）、哈希表（开放寻址法、线性探测）、map 应用、去重
 - 文件：`set/p1955autoanalysi.cpp`、`set/p4305differenetnumber.cpp`、`set/p3879readingcomprehension.cpp`
 - 易错点：程序自动分析要先合并全部 `xi=xj` 的等式约束、再统一检查 `xi≠xj`，顺序颠倒会误判，下标达 10^9 只能用 map 或离散化，多组数据记得清空 fa 与 sz；不重复数字的开放寻址哈希模数要取质数（如 100003），取模写成 `(x%N+N)%N` 防止负数下标，每组都要 `memset(h,-1)`，模数选得不好会因探测链过长而 TLE；阅读理解按短文编号用 map 存单词可自动去重，查询时遍历 n 篇短文输出编号，数组大小别写成 `10^3`（C++ 中 `^` 是按位异或，不是幂）
+- 状态：已完成
+
+---
+
+## Day29 - 09-23
+
+- [P3916](https://www.luogu.com.cn/problem/P3916) 图的遍历
+- [P5318](https://www.luogu.com.cn/problem/P5318) 【深基18.例3】查找文献
+- [P1113](https://www.luogu.com.cn/problem/P1113) 杂务
+
+- 知识点：图的存储（邻接表）、反向建图、DFS / BFS 遍历、拓扑序递推、DAG 上的 DP
+- 文件：`map/p3916iteratemap.cpp`、`map/p5318finddocument.cpp`、`map/p1113chores.cpp`
+- 易错点：图的遍历要反向建图（`mp[v].push_back(u)`），再从 n 到 1 倒序 DFS，先访问到的就是能到达的最大编号，用答案数组兼作访问标记，可避免 1↔2 这类环被反复搜索；查找文献要求编号小的邻居先访问，要先把边排序再建邻接表，DFS 与 BFS 之间得 `memset` 清空 `vis`，BFS 在入队时就打标记以防重复入队；杂务的输入保证按拓扑序给出，直接递推 `tim[a] = max(tim[前提]) + b` 即可，前提列表以 0 结束，答案取所有 `tim` 的最大值
 - 状态：已完成
 
 ## 知识体系
