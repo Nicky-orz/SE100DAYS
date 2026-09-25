@@ -32,6 +32,8 @@
 - fgets(`line`, sizeof(`line`), stdin)
 - sscanf使用同scanf,第一个参数是字符串
 - fgets+sscanf比scanf安全
+- %.Ns(前N位);%.Nf(小数);%.NG(有效数字);%.NE(小数);%0Nd(N位，不足补0);%Nd(右对齐补空格)
+- pow在开负数的奇数次根时会出错
 
 ## Lesson3
 - 输出失败要处理剩余字符，用 %* 赋值抑制符
@@ -45,4 +47,5 @@
 - realloc(`p`,sizeof(`int`)); 重新分配内存
 - void *memcpy(void *dest, const void *src, size_t n); 从 src 复制 n 个字节到 dest，返回 dest
 - 学会读像上面一样的说明
-- static `int` 函数内初始化一次，全局访问
+- static `int` 函数内初始化一次，全局访问，或者是只读
+- memset按字节填充,极大0x3f,极小0xc0,快；fill按值填充，慢

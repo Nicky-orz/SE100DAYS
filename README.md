@@ -41,6 +41,8 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day27 | 09-21 | 3 | 扩展域并查集、埃氏筛、map 并查集 | 已完成 |
 | Day28 | 09-22 | 3 | 并查集离散化、哈希表、map 去重 | 已完成 |
 | Day29 | 09-23 | 3 | 图遍历、反向建图、拓扑递推 | 已完成 |
+| Day30 | 09-24 | 2 | 拓扑排序、DAG 最长路、记忆化计数 | 已完成 |
+| Day31 | 09-25 | 3 | 模拟、构造、并查集 | 已完成(2/3) |
 
 ---
 
@@ -387,6 +389,35 @@ This is a record about a new software engineering student, documenting his 100 d
 - 文件：`map/p3916iteratemap.cpp`、`map/p5318finddocument.cpp`、`map/p1113chores.cpp`
 - 易错点：图的遍历要反向建图（`mp[v].push_back(u)`），再从 n 到 1 倒序 DFS，先访问到的就是能到达的最大编号，用答案数组兼作访问标记，可避免 1↔2 这类环被反复搜索；查找文献要求编号小的邻居先访问，要先把边排序再建邻接表，DFS 与 BFS 之间得 `memset` 清空 `vis`，BFS 在入队时就打标记以防重复入队；杂务的输入保证按拓扑序给出，直接递推 `tim[a] = max(tim[前提]) + b` 即可，前提列表以 0 结束，答案取所有 `tim` 的最大值
 - 状态：已完成
+
+---
+
+## Day30 - 09-24
+
+### 决定不写oj的易错和复盘&中秋假期开始啦！
+
+- [P1807](https://www.luogu.com.cn/problem/P1807) 最长路
+- [P4017](https://www.luogu.com.cn/problem/P4017) 最大食物链计数
+
+- 知识点：拓扑排序、DAG 上的最长路 DP、记忆化搜索、图上路径计数
+- 文件：`map/p1807longestway.cpp`、`map/p4017foodstring.cpp`
+- 易错点：最长路要先拓扑排序再按 `dis[v] = max(dis[v], dis[u]+w)` 递推，初值用 `fill(dis,dis+maxn,-1e9)` 而不能用 `memset`（memset 按字节填充，要取极小值应写 `0xc0`），不可达节点必须 `continue` 跳过，否则会被 -1e9 松弛污染，最后 `dis[n]` 仍为初值时输出 -1；最大食物链计数用记忆化 DFS，`fedge[x]` 为空（没有捕食者）时返回 1 作为递推边界，只在 `bedge[i]` 为空的食物链起点处累加，每一步加和与返回都要取模，不加记忆化会 TLE
+- 状态：已完成
+
+---
+
+## Day31 - 09-25
+
+### 第一次打洛谷的线上赛
+
+- [T769704](https://www.luogu.com.cn/problem/T769704) 宇宙巫女现身
+- [T802300](https://www.luogu.com.cn/problem/T802300) 月兔通信网络
+- [T811943](https://www.luogu.com.cn/problem/T811943) 湖上的前线基地
+
+- 知识点：模拟与边界修正、构造（图的直径）、并查集 + 按位与与超集枚举
+- 文件：`competition/Luogu.Septdiv2/A.cpp`、`competition/Luogu.Septdiv2/B.cpp`、`competition/Luogu.Septdiv2/C.cpp`
+- 易错点：模拟题要按题意随时修正；构造题里 `need = n(n-1)/2 - m` 小于 n 时直接把图补成完全图，否则取度数最大的点为中心去连所有非邻接点，用 `n-1-maxdeg` 条边把最大通信难度降到 2，连线后要立刻在邻接矩阵置位以防重边，新增边数必须小于 n；超集枚举题的关键是 `i & j = k` 时所有超集都能经 k 连通，按 a 从小到大枚举超集并用并查集合并即可，不必枚举全部点对，但 n=20 时枚举量仍会超时，只能拿部分分
+- 状态：已完成(2/3)
 
 ## 知识体系
 
