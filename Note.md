@@ -48,5 +48,5 @@
 - void *memcpy(void *dest, const void *src, size_t n); 从 src 复制 n 个字节到 dest，返回 dest
 - 学会读像上面一样的说明
 - static `int` 函数内初始化一次，全局访问，或者是只读
-- memset按字节填充,极大0x3f,极小0xc0,快；fill按值填充，慢
-- 位运算具有子集结构
+- memset按字节填充,极大0x3f,
+- 图和集合往往可以转化
