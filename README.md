@@ -44,6 +44,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day30 | 09-24 | 2 | 拓扑排序、DAG 最长路、记忆化计数 | 已完成 |
 | Day31 | 09-25 | 3 | 模拟、构造、并查集 | 已完成 |
 | Day32 | 09-26 | 1 | 欧拉路径、Hierholzer | 已完成 |
+| Day33 | 09-27 | 6 | 模拟、埃氏筛、树形 DFS | 已完成 |
 
 ---
 
@@ -429,6 +430,19 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：欧拉路径 / 欧拉回路、Hierholzer 算法、度数判定、字典序最小
 - 文件：`map/p1127wordstring.cpp`
 - 易错点：全部串联的本质是求欧拉路径，要用 Hierholzer 而不是回溯搜索（注释记录回溯 dfs TLE 两个点）；单词先整体升序、再把各点邻接表按单词降序排序，使 `pop_back()` 取到当前最小单词；答案要等递归返回后再记录、最后整体反转；入度全等于出度时起点取有出边的最小字母，否则需恰好一个点出度比入度大 1；最后还要判 `ans.size() == n`，不连通则输出 `***`
+- 状态：已完成
+
+---
+
+## Day33 - 09-27
+
+### div4的难度前五题太水了，就只写F题进来
+
+- [T789497](https://www.luogu.com.cn/problem/T789497) 【9 月入门赛】月饼调配
+
+- 知识点：浮点运算与向上取整、循环累加与整除、二维网格与圆的判定、埃氏筛、四连通模拟与贪心换色、树形后序 DFS 与子树权值和
+- 文件：`competition/LGR-306-div4/A.cpp`、`competition/LGR-306-div4/B.cpp`、`competition/LGR-306-div4/C.cpp`、`competition/LGR-306-div4/D.cpp`、`competition/LGR-306-div4/E.cpp`、`competition/LGR-306-div4/F.cpp`
+- 易错点：F 题不确定父节点，要双向建图并在后序 DFS 中记下父节点，累加时跳过指向父节点的边，答案按 `(diff+w-1)/w` 向上取整
 - 状态：已完成
 
 ## 知识体系
