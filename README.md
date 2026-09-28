@@ -45,6 +45,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day31 | 09-25 | 3 | 模拟、构造、并查集 | 已完成 |
 | Day32 | 09-26 | 1 | 欧拉路径、Hierholzer | 已完成 |
 | Day33 | 09-27 | 6 | 模拟、埃氏筛、树形 DFS | 已完成 |
+| Day34 | 09-28 | 1 | DFS 可达性、图上计数 | 已完成 |
 
 ---
 
@@ -445,6 +446,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 易错点：F 题不确定父节点，要双向建图并在后序 DFS 中记下父节点，累加时跳过指向父节点的边，答案按 `(diff+w-1)/w` 向上取整
 - 状态：已完成
 
+---
+
+## Day34 - 09-28
+
+- [P2853](https://www.luogu.com.cn/problem/P2853) [USACO06DEC] Cow Picnic S
+
+- 知识点：图的邻接表、DFS 可达性、访问计数、拓扑排序的适用条件
+- 文件：`map/p2853CowPicnic.cpp`
+- 易错点：要让每头牛都能到达同一牧场，就对 K 头牛各自 DFS 并把经过的点计数，最后数 `cnt[i] == K` 的牧场；图可能带环，拓扑排序只能处理 DAG（注释记录拓扑做法只拿 10 分，反例是 1→2、2→3、3→4、4→1 的回边）；每次 DFS 前必须 `memset(vis,0)` 清空标记；同一个牧场可能有多头牛，所以阈值是 K 次访问而不是去重后的牛数
+- 状态：已完成
+
 ## 知识体系
 
 ### 数据结构
@@ -564,6 +576,13 @@ map可以用来实现并查集，哈希表，只是代价是时间复杂度从O(
 - C++ set 通常有序，底层红黑树
 - 自动去重、自动排序
 - 支持查找前驱、后继、范围查询，O(log n)
+
+#### bitset
+
+- 8->1字节的bool数组
+- 长度必须在编译期确定：bitset<1005> bs
+- .set(pos) pos位置1
+- 可进行位运算
 
 ### 算法
 
