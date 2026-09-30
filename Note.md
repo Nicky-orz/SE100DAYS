@@ -17,16 +17,26 @@
 - malloc后应该有free
 - 缓冲区溢出会覆盖相邻内存，应该检查缓冲区内容长度
 - 文件读写：1.文件指针FILE; 2.`fopen(文件名,"r"/"w"/"a");` 3.`fread/fwrite(类型,字节数,数量,指针)` 4.`fclose(指针)`
-- 命令行参数会返回1.参数个数（包括命令）2.具体参数
+- 命令行参数会返回1.argc参数个数（包括命令）2.argv具体参数
 
 ## lec6 Python
 - `print(f"hello,{name}")`进行占位符形式的输出
+- `print`中字符串可以+和*
 - 命名参数:`end=""`取消默认换行
 - python中单双引号都可以定义字符串，社区中倾向用单引号
 - python中的数据类型有:bool,float,int,str
-- 面向对象编程：`.lower()`，类型->对象，函数->方法
+- 面向对象编程：`.lower()`，(类型、库)->对象，函数->方法
 - 用不到的循环变量写成_
 - `if __name__ == "__main__"` 避免导入库时执行main函数
+- `//`用于进行整数除法
+- 异常处理机制：`try-except`
+- python对作用域的处理并不严格
+- 列表:增加`.append()` 求和`sum()` 长度`len()`
+- `for-else`遍历整个循环没有执行`break`，则执行`else`
+- `if a in list`遍历list判断是否存在a
+- 键值对定义:`dic={"key":"value",...}`
+
+
 
 # Gain From CPL
 
@@ -48,6 +58,9 @@
 - 或、与、非
 - 三则表达式?:
 
+## Lesson4
+- `go-while`语句的使用
+
 # Gain From deepseek
 - `#define A B`  宏定义，作用是把代码中的A替换成B
 - `memset(a,-1,sizeof(a));`  初始化C++
@@ -58,3 +71,4 @@
 - `static int` 函数内初始化一次，全局访问，或者是只读
 - memset按字节填充,极大0x3f,
 - 图和集合往往可以转化。
+- 不确定数据组数时使用`while(cin)`
