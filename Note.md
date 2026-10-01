@@ -16,7 +16,7 @@
 - 动态内存分配应该检查分配失效情况（NULL）
 - malloc后应该有free
 - 缓冲区溢出会覆盖相邻内存，应该检查缓冲区内容长度
-- 文件读写：1.文件指针FILE; 2.`fopen(文件名,"r"/"w"/"a");` 3.`fread/fwrite(类型,字节数,数量,指针)` 4.`fclose(指针)`
+- 文件读写：1.文件指针类型FILE; 2.打开文件，返回指针`fopen(文件名,"r"/"w"/"a");` 3.`fread/fwrite(类型,字节数,数量,指针)`，`fprintf(指针,"格式符",变量)` 4.`fclose(指针)`
 - 命令行参数会返回1.argc参数个数（包括命令）2.argv具体参数
 
 ## lec6 Python
@@ -35,7 +35,7 @@
 - `for-else`遍历整个循环没有执行`break`，则执行`else`
 - `if a in list`遍历list判断是否存在a
 - 键值对定义:`dic={"key":"value",...}`
-
+- csv:追加模式打开文件`with open("doc.csv","a") as filename:`，创建对象 `writername = csv.writer(filename)`，写入`writername.writerow([content])`，字典`writername = csv.DictWriter(filename,fieldnames=[])`，`writer.writerow({...})`，字典读写的健壮性比列表强
 
 
 # Gain From CPL
@@ -72,3 +72,4 @@
 - memset按字节填充,极大0x3f,
 - 图和集合往往可以转化。
 - 不确定数据组数时使用`while(cin)`
+- 偏序是集合上满足自反性、反对称性和传递性的二元关系；它允许有些元素之间不可比较

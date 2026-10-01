@@ -48,6 +48,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day34 | 09-28 | 1 | DFS 可达性、图上计数 | 已完成 |
 | Day35 | 09-29 | 2 | 拓扑排序、DFS 取模坐标 | 已完成 |
 | Day36 | 09-30 | 1 | 拓扑排序、虚拟节点建图、最长路 | 已完成 |
+| Day37 | 10-01 | 2 | 进制转换、异或 | 已完成 |
 
 ---
 
@@ -480,6 +481,18 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：拓扑排序、虚拟节点优化建图、DAG 最长路 DP、差分约束思想
 - 文件：`map/p1983stationlevel.cpp`
 - 易错点：某趟车若在途经区间 [L,R] 内全部停靠，它就没提供任何等级信息，必须跳过不建图，否则零权边会污染最长路；直接让每趟车与未停靠站两两连边是 N×M 级，要用虚拟节点（编号 i+n）中转，把边数降到 N+M；边只在 [L,R] 内建，方向为停靠站→虚拟节点（权 1）、虚拟节点→未停靠站（权 0），最后取最大 dis 加 1
+- 状态：已完成
+
+---
+
+## Day37 - 10-01
+
+- [P1143](https://www.luogu.com.cn/problem/P1143)
+- [P1469](https://www.luogu.com.cn/problem/P1469)
+
+- 知识点：进制转换（n 进制转 m 进制）、逐位累乘与最高位权值、数字与字母的映射、异或消去配对、快速输入
+- 文件：`bitoperation/p1143baseconversion.cpp`、`bitoperation/p1469findchopsticks.cpp`
+- 易错点：进制转换逐位累乘时用 `number[i] > '9'` 区分字母与数字，字母要 `- 'A' + 10`；求最高位权值的循环写成严格小于，会在 tmp 恰好为 m 的整数次幂时出错（如 16 转 16 会输出 `G`），应包含取等；转换后每一位若 `tmp < ttmp` 要补 '0' 占位，否则中间位会缺失；找筷子不能真的开 bool 数组或按位翻转模拟（注释记录 MLE），异或能让出现偶数次的长度两两抵消，剩下的就是答案，数据量很大要用 `scanf` 或快读
 - 状态：已完成
 
 ## 知识体系
