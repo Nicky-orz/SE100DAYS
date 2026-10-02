@@ -49,6 +49,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day35 | 09-29 | 2 | 拓扑排序、DFS 取模坐标 | 已完成 |
 | Day36 | 09-30 | 1 | 拓扑排序、虚拟节点建图、最长路 | 已完成 |
 | Day37 | 10-01 | 2 | 进制转换、异或 | 已完成 |
+| Day38 | 10-02 | 4 | 高低位交换、负进制转换、乘法原理、组合数 | 已完成 |
 
 ---
 
@@ -493,6 +494,20 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：进制转换（n 进制转 m 进制）、逐位累乘与最高位权值、数字与字母的映射、异或消去配对、快速输入
 - 文件：`bitoperation/p1143baseconversion.cpp`、`bitoperation/p1469findchopsticks.cpp`
 - 易错点：进制转换逐位累乘时用 `number[i] > '9'` 区分字母与数字，字母要 `- 'A' + 10`；求最高位权值的循环写成严格小于，会在 tmp 恰好为 m 的整数次幂时出错（如 16 转 16 会输出 `G`），应包含取等；转换后每一位若 `tmp < ttmp` 要补 '0' 占位，否则中间位会缺失；找筷子不能真的开 bool 数组或按位翻转模拟（注释记录 MLE），异或能让出现偶数次的长度两两抵消，剩下的就是答案，数据量很大要用 `scanf` 或快读
+- 状态：已完成
+
+---
+
+## Day38 - 10-02
+
+- [P1100](https://www.luogu.com.cn/problem/P1100)
+- [P1017](https://www.luogu.com.cn/problem/P1017)
+- [P1866](https://www.luogu.com.cn/problem/P1866)
+- [P2822](https://www.luogu.com.cn/problem/P2822)
+
+- 知识点：位运算高低位交换、无符号整型与逻辑右移、负进制转换与余数修正、排序 + 乘法原理、组合数递推（杨辉三角）、二维前缀和
+- 文件：`bitoperation/p1100swap.c`、`bitoperation/p1017baseconversion.c`、`combinatorics/p1866order.c`、`combinatorics/p2822combinenumber.cpp`
+- 易错点：高低位交换要把数字当 32 位无符号处理，`(n << 16) | (n >> 16)` 中的右移必须是无符号（注释强调 `unsigned int` 与 `%u`），用有符号 int 会算术补位导致高 16 位全错，输入输出也要配 `%u`；负进制转换不能套正进制模板，C 语言负数取模结果可能为负，要 `if(low<0) n++, low -= base;` 把余数修正到 [0,|base|) ；编号题先把每种的上限从小到大排序，第 i 种可选的编号数是 `a[i] - i`（前面已占用 i 个），按乘法原理连乘并取模 1e9+7，连乘用 long long；组合数问题不能真算阶乘，用 `num[i][j] = (num[i-1][j] + num[i-1][j-1]) % k` 递推杨辉三角，余数为 0 即 k 整除 C(i,j)，`j == 0` 需预处理为 1，二维前缀和只在 `j <= i` 的三角区域内累加，否则会把无效格子算进答案，但是要保持前缀和的计算，否则无法处理m>=n的情况
 - 状态：已完成
 
 ## 知识体系
