@@ -52,6 +52,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day38 | 10-02 | 4 | 高低位交换、负进制转换、乘法原理、组合数 | 已完成 |
 | Day39 | 10-03 | 2 | 组合数排名、排序去重、容斥 | 已完成 |
 | Day40 | 10-04 | 4 | bitset 统计、枚举扩展、分类讨论取模、相邻对 DP | 已完成 |
+| Day41 | 10-05 | 1 | 因子枚举、桶计数 | 已完成 |
 
 ---
 
@@ -533,6 +534,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：bitset 标记与统计、枚举 + 按步长扩展、二进制串下标换算与快速幂取模、分类讨论（`p < k`）、动态规划（相邻对状态设计、前缀和 + 滚动数组优化）、离线按参数分组回答
 - 文件：`competition/LGR-305-Div.3/A.cpp`、`competition/LGR-305-Div.3/B.cpp`、`competition/LGR-305-Div.3/C.cpp`、`competition/LGR-305-Div.3/D.cpp`、`competition/LGR-305-Div.3/D-simple.cpp`
 - 易错点：A 题用 `bitset<1000005>` 标记，bitset 长度必须在编译期确定，且 `s[i]` 是 0-indexed 而标记位置写成 `i+1`，映射错位会导致整体偏移，重复的询问只在未标记时置位、答案取 `Bits.count()`；B 题枚举公差 `x` 与起点 `p` 后按步长向左右扩展，遇到非 'X' 立即 break，左右步长不同（左侧 `2*x`、右侧 `x`）写反会漏解或把间隔位置错误计入，字符串是 1-indexed 访问要写 `s[i-1]`；C 题先把最后一个 '1' 的 0-indexed 下标换算成 `n-p` 个可用位置，`p < k` 必须特判输出 0（注释标记），答案是 `2^p - 2^k`，相减可能为负要写 `(pp-kk+mod)%mod`，幂要边乘边取模而不能用 `pow`，多组数据每次都要重置 `p`、`pp`、`kk`；D 题的核心结论是答案只依赖末尾 0 的个数 `s = tz(x)` 与 `k`，`k >= s` 时结果饱和为 `2^(s+1)-1`，所以每个询问要截断成 `min(k, s)` 并按 s 分组、推进到该层统一回答（注释的相邻对 DP 思路：先用最少操作次数把「y 是否存在」转成「项数最小值」，相邻权值差只有 -1/0/+1，分奇偶得到三种相邻对与转移方程），`D-simple.cpp` 用 `f[s][k] = f[s-1][k] + 2*f[s-2][k-1]` 配上 `f[s][0] = 1` 与 `full = 2*full+1` 直接打表；`D.cpp` 用前缀和 A/B 与滚动数组把转移降成 O(1)，注意每步取模、减法后加 MOD，边界对 (s,∞) 只保留 `a=2b` 分支，读入要关闭同步流
+- 状态：已完成
+
+---
+
+## Day41 - 10-05
+
+- [P2926](https://www.luogu.com.cn/problem/P2926)
+
+- 知识点：数论（枚举因子）、值域桶计数、容斥（减去自身）、调和级数（倍数筛）思想、复杂度取舍
+- 文件：`numbertheory/p2926PattingHeadsS.cpp`
+- 易错点：O(n√A)≈1e9 也能过
 - 状态：已完成
 
 ## 知识体系
