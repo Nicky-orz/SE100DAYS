@@ -547,6 +547,18 @@ This is a record about a new software engineering student, documenting his 100 d
 - 易错点：O(n√A)≈1e9 也能过
 - 状态：已完成
 
+---
+
+## Day42 - 10-06
+
+-[P3383](https://www.luogu.com.cn/problem/P3383)
+
+- 知识点：线性筛
+- 文件：`numbertheory/p3383primes.cpp`
+- 易错点：埃氏筛和欧拉筛的不同
+- 状态：已完成
+
+---
 ## 知识体系
 
 ### 数据结构
