@@ -53,6 +53,8 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day39 | 10-03 | 2 | 组合数排名、排序去重、容斥 | 已完成 |
 | Day40 | 10-04 | 4 | bitset 统计、枚举扩展、分类讨论取模、相邻对 DP | 已完成 |
 | Day41 | 10-05 | 1 | 因子枚举、桶计数 | 已完成 |
+| Day42 | 10-06 | 1 | 线性筛 | 已完成 |
+| Day43 | 10-07 | 1 | 倍数筛，质因子 | 已完成 |
 
 ---
 
@@ -559,6 +561,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 状态：已完成
 
 ---
+
+## Day43 - 10-07
+
+-[P1835](https://www.luogu.com.cn/problem/P1835)
+
+- 知识点：倍数筛，质因子
+- 文件：`numbertheory/p1835rouprimes.cpp`
+- 易错点：每个合数都有小于sqrt的最小质因子，以此进行[L,R]的合数标记；l==1时进行边界处理
+
+---
+
 ## 知识体系
 
 ### 数据结构
