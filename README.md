@@ -55,6 +55,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day41 | 10-05 | 1 | 因子枚举、桶计数 | 已完成 |
 | Day42 | 10-06 | 1 | 线性筛 | 已完成 |
 | Day43 | 10-07 | 1 | 倍数筛，质因子 | 已完成 |
+| Day44 | 10-08 | 2 | 最大公约数 / 最小公倍数、质因数分解、枚举约数 | 已完成 |
 
 ---
 
@@ -553,7 +554,7 @@ This is a record about a new software engineering student, documenting his 100 d
 
 ## Day42 - 10-06
 
--[P3383](https://www.luogu.com.cn/problem/P3383)
+- [P3383](https://www.luogu.com.cn/problem/P3383)
 
 - 知识点：线性筛
 - 文件：`numbertheory/p3383primes.cpp`
@@ -564,13 +565,24 @@ This is a record about a new software engineering student, documenting his 100 d
 
 ## Day43 - 10-07
 
--[P1835](https://www.luogu.com.cn/problem/P1835)
+- [P1835](https://www.luogu.com.cn/problem/P1835)
 
 - 知识点：倍数筛，质因子
 - 文件：`numbertheory/p1835rouprimes.cpp`
 - 易错点：每个合数都有小于sqrt的最小质因子，以此进行[L,R]的合数标记；l==1时进行边界处理
+- 状态：已完成
 
 ---
+
+## Day44 - 10-08
+
+- [P1029](https://www.luogu.com.cn/problem/P1029)
+- [P1072](https://www.luogu.com.cn/problem/P1072)
+
+- 知识点：最大公约数与最小公倍数（辗转相除法）、`P*Q = gcd*lcm`、质因数分解、DFS 枚举约数、溢出规避
+- 文件：`numbertheory/p1029gcdlcmproblem.cpp`、`numbertheory/p1072Hankonsproblem.cpp`
+- 易错点：P1029 `p == q` 时答案只能加 1；P1072 把 b1 质因数分解后 DFS 枚举它的所有约数作为候选 x（答案一定落在 b1 的约数里）,找因子只找到 sqrt，循环后 `tb1 != 1` 必须补上剩余的大质因子，`b1 == 1` 要单独特判，最后 sort + unique 去重再输出个数
+- 状态：已完成
 
 ## 知识体系
 
@@ -718,8 +730,10 @@ map可以用来实现并查集，哈希表，只是代价是时间复杂度从O(
 #### BFS/DFS
 - 反向记忆化dfs能解决正向不能解决的环
 
-#### 埃氏筛
+#### 线性筛
 - 筛掉合数,留下质数
+- 埃氏筛倍数标记 O(nloglogn)
+- 欧拉筛用最小质因子优化重复倍数标记 O(n)
 
 #### 拓扑排序
 - 从入度为0的点开始，标记相连的边，统计新的入度为0的点，旧的入队，直到全部统计完
