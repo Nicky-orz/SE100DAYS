@@ -591,10 +591,11 @@ This is a record about a new software engineering student, documenting his 100 d
 
 - [P1572](https://www.luogu.com.cn/problem/P1572)
 - [P4057](https://www.luogu.com.cn/problem/P4057)
+- [P2651](https://www.luogu.com.cn/problem/P2651)
 
 - 知识点：最大公约数与最小公倍数（辗转相除法、取绝对值）、分数通分与约分、格式化输入解析、多次约分防溢出
-- 文件：`numbertheory/p1572caculatescore.cpp`、`numbertheory/p4057running.cpp`
-- 易错点：分数题输入是 `a/b` 紧密拼接的算式，要用 `scanf("%lld/%lld")` 格式化读入并循环到 EOF（注释：对于紧凑且格式固定的数据可以用 scanf 格式化输入），手写字符解析容易漏掉负号和整数项；每一步都要约分，最后分母为 1 时只输出整数，`gcd` 里要 `llabs` 取绝对值；晨跑题求三人最小公倍数要两级 `lcm(a, lcm(b, c))`，不能写成连乘再除（中间结果会溢出且不一定整除），`a*b/gcd` 必须全程 long long
+- 文件：`numbertheory/p1572caculatescore.cpp`、`numbertheory/p4057running.cpp`、`numbertheory/p2651addsquare.cpp`
+- 易错点：分数题输入是 `a/b` 紧密拼接的算式，要用 `scanf("%lld/%lld")` 格式化读入并循环到 EOF（注释：对于紧凑且格式固定的数据可以用 scanf 格式化输入），手写字符解析容易漏掉负号和整数项；每一步都要约分，最后分母为 1 时只输出整数，`gcd` 里要 `llabs` 取绝对值；晨跑题求三人最小公倍数要两级 `lcm(a, lcm(b, c))`，不能写成连乘再除（中间结果会溢出且不一定整除），`a*b/gcd` 必须全程 long long；括号题只需要判断a2做分母就够了，其它都可以变成分子，但a2不能，桶计数法开map，a<=2^31-1
 - 状态：已完成
 
 ## 知识体系
