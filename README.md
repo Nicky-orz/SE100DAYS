@@ -56,6 +56,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day42 | 10-06 | 1 | 线性筛 | 已完成 |
 | Day43 | 10-07 | 1 | 倍数筛，质因子 | 已完成 |
 | Day44 | 10-08 | 2 | 最大公约数 / 最小公倍数、质因数分解、枚举约数 | 已完成 |
+| Day45 | 10-09 | 2 | 最小公倍数、分数加减与约分 | 已完成 |
 
 ---
 
@@ -582,6 +583,18 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：最大公约数与最小公倍数（辗转相除法）、`P*Q = gcd*lcm`、质因数分解、DFS 枚举约数、溢出规避
 - 文件：`numbertheory/p1029gcdlcmproblem.cpp`、`numbertheory/p1072Hankonsproblem.cpp`
 - 易错点：P1029 `p == q` 时答案只能加 1；P1072 把 b1 质因数分解后 DFS 枚举它的所有约数作为候选 x（答案一定落在 b1 的约数里）,找因子只找到 sqrt，循环后 `tb1 != 1` 必须补上剩余的大质因子，`b1 == 1` 要单独特判，最后 sort + unique 去重再输出个数
+- 状态：已完成
+
+---
+
+## Day45 - 10-09
+
+- [P1572](https://www.luogu.com.cn/problem/P1572)
+- [P4057](https://www.luogu.com.cn/problem/P4057)
+
+- 知识点：最大公约数与最小公倍数（辗转相除法、取绝对值）、分数通分与约分、格式化输入解析、多次约分防溢出
+- 文件：`numbertheory/p1572caculatescore.cpp`、`numbertheory/p4057running.cpp`
+- 易错点：分数题输入是 `a/b` 紧密拼接的算式，要用 `scanf("%lld/%lld")` 格式化读入并循环到 EOF（注释：对于紧凑且格式固定的数据可以用 scanf 格式化输入），手写字符解析容易漏掉负号和整数项；每一步都要约分，最后分母为 1 时只输出整数，`gcd` 里要 `llabs` 取绝对值；晨跑题求三人最小公倍数要两级 `lcm(a, lcm(b, c))`，不能写成连乘再除（中间结果会溢出且不一定整除），`a*b/gcd` 必须全程 long long
 - 状态：已完成
 
 ## 知识体系
