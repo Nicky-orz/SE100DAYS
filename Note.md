@@ -37,6 +37,32 @@
 - 键值对定义:`dic={"key":"value",...}`
 - csv:追加模式打开文件`with open("doc.csv","a") as filename:`，创建对象 `writername = csv.writer(filename)`，写入`writername.writerow([content])`，字典`writername = csv.DictWriter(filename,fieldnames=[])`，`writer.writerow({...})`，字典读写的健壮性比列表强
 
+## lec7 SQL
+- `sqlite3 DatabaseName`创建数据库
+- `.mode csv`以csv格式进入数据库
+- `.import FileName TableName`导入数据
+- `.quit`退出
+- `CREATE TABLE TableName (show_id DataType NOT NULL, PRIMARY KEY (column)...);`建表
+- `NOT NULL`不能为空，`PRIMARY KEY`主键，`FOREIGN KEY() REFERENCES TableName (column)`外键
+- `CREATE INDEX name ON table (column,...)`索引优化
+- `SELECT */ColomnName FROM TableName;` 读取数据
+- `SELECT COUNT(*/DISTINCE language) FROM TableName;`总数
+- `SELECT DISTINCE ColomnName From favorites;`不同的量
+- `SELECT ... TableName WHERE ColomnName = 'Name';`查询条件设置,
+- `SELECT ... TableName GROUP BY ColomnName ORDER BY COUNT(*) DESC;`分组进行，按数量降序排列
+- `SELECT COUNT(*) AS n FROM TableName;`别名设置
+- `SELECT ... LIMIT Number`限制输出Number个
+- `INSERT INTO TableName (column) VALUES(value);`写入
+- `DELETE FROM TableName WHERE ...`删除一行
+- `UPDATE TableName SET column = valse WHERE ...`修改
+- `DROP TABLE TableName`删除表
+- `SELECT * FROM TableName WHERE column IN(SELECT column FROM TableName WHERE ...);`多表嵌套查询
+- `SELECT * FROM Table1 JOIN Table2 ON Table1.column1 = Table2.column2`多表连接查询
+- 嵌套去重基于`IN`的存在性判断，连接的重复基于`JOIN ON`连接成宽表
+- `AND`等价`&&`，`OR`等价`||`，`''`等价`\'`，`LIKE + %`通配符，`A, B`并列A和B
+- `sorted()`python排序，可以设置key,reverse.Eg:`sorted(dic,key=dic.get,reverse=True)`按值从大到小排序
+- 竞态条件：防止多线程同时操作同一个数据引发问题
+
 
 # Gain From CPL
 

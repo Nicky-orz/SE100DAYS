@@ -56,7 +56,8 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day42 | 10-06 | 1 | 线性筛 | 已完成 |
 | Day43 | 10-07 | 1 | 倍数筛，质因子 | 已完成 |
 | Day44 | 10-08 | 2 | 最大公约数 / 最小公倍数、质因数分解、枚举约数 | 已完成 |
-| Day45 | 10-09 | 2 | 最小公倍数、分数加减与约分 | 已完成 |
+| Day45 | 10-09 | 3 | 最小公倍数、分数加减与约分、整除判断 | 已完成 |
+| Day46 | 10-10 | 2 | 约数求和、贪心切正方形 | 已完成 |
 
 ---
 
@@ -596,6 +597,18 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：最大公约数与最小公倍数（辗转相除法、取绝对值）、分数通分与约分、格式化输入解析、多次约分防溢出
 - 文件：`numbertheory/p1572caculatescore.cpp`、`numbertheory/p4057running.cpp`、`numbertheory/p2651addsquare.cpp`
 - 易错点：分数题输入是 `a/b` 紧密拼接的算式，要用 `scanf("%lld/%lld")` 格式化读入并循环到 EOF（注释：对于紧凑且格式固定的数据可以用 scanf 格式化输入），手写字符解析容易漏掉负号和整数项；每一步都要约分，最后分母为 1 时只输出整数，`gcd` 里要 `llabs` 取绝对值；晨跑题求三人最小公倍数要两级 `lcm(a, lcm(b, c))`，不能写成连乘再除（中间结果会溢出且不一定整除），`a*b/gcd` 必须全程 long long；括号题只需要判断a2做分母就够了，其它都可以变成分子，但a2不能，桶计数法开map，a<=2^31-1
+- 状态：已完成
+
+---
+
+## Day46 - 10-10
+
+- [P1403](https://www.luogu.com.cn/problem/P1403)
+- [P2660](https://www.luogu.com.cn/problem/P2660)
+
+- 知识点：约数个数与倍数筛（调和级数）、求和与前缀、贪心（正方形最优）与单位面积成本比较、long long 防溢出
+- 文件：`numbertheory/p1403cdrereseach.cpp`、`numbertheory/p2660zzcfarming.cpp`
+- 易错点：约数研究用倍数筛思想即可，也有数学公式推导f(i) = n/i；种田题贪心每次切出边长取较短边的最大正方形，成本写成 `y/x*4*x`（先除再乘，别写成容易溢出的连乘顺序）
 - 状态：已完成
 
 ## 知识体系

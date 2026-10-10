@@ -1,3 +1,5 @@
 .vscode/
 *.exe
 test.c
+stdc.h
+stdc.h.gch
