@@ -58,6 +58,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day44 | 10-08 | 2 | 最大公约数 / 最小公倍数、质因数分解、枚举约数 | 已完成 |
 | Day45 | 10-09 | 3 | 最小公倍数、分数加减与约分、整除判断 | 已完成 |
 | Day46 | 10-10 | 2 | 约数求和、贪心切正方形 | 已完成 |
+| Day47 | 10-11 | 2 | 前缀和、二维前缀和、矩形最大和 | 已完成 |
 
 ---
 
@@ -609,6 +610,18 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：约数个数与倍数筛（调和级数）、求和与前缀、贪心（正方形最优）与单位面积成本比较、long long 防溢出
 - 文件：`numbertheory/p1403cdrereseach.cpp`、`numbertheory/p2660zzcfarming.cpp`
 - 易错点：约数研究用倍数筛思想即可，也有数学公式推导f(i) = n/i；种田题贪心每次切出边长取较短边的最大正方形，成本写成 `y/x*4*x`（先除再乘，别写成容易溢出的连乘顺序）
+- 状态：已完成
+
+---
+
+## Day47 - 10-11
+
+- [P8218](https://www.luogu.com.cn/problem/P8218)
+- [P1719](https://www.luogu.com.cn/problem/P1719)
+
+- 知识点：前缀和、区间和查询、二维前缀和、枚举矩形、最大子矩阵和
+- 文件：`prefixsum/p8218togetsum.cpp`、`prefixsum/p1719maxrectangle.cpp`
+- 易错点：前缀和数组要从下标 1 开始存，`sum[r]-sum[l-1]` 才能得到区间和，边界写错会漏掉第一个元素；二维前缀和使用 `sum[i][j]=sum[i-1][j]+sum[i][j-1]-sum[i-1][j-1]+a`，矩形和用四个角的差值求得，枚举四重循环时别遗漏 `x-1`、`y-1` 的边界，`ans` 初值建议设成极小值防止全负数场景被忽略，也可以用最大字段和维护，时间复杂度从O(n^4)变成O(n^3)
 - 状态：已完成
 
 ## 知识体系

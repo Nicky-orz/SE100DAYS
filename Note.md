@@ -71,7 +71,7 @@
 
 ## Lesson2
 - scanf的输入最好一一对应缓冲区输入
-- scanf同时支持控制数量（数组），精度，用变量赋值的话，宽度或精度 \* 各取一个 int
+- scanf同时支持控制数量（数组），精度，printf用变量赋值的话，宽度或精度 \* 各取一个 int
 - scanf不使用无宽度限制的%s，检查scanf的返回值，以防止缓冲区溢出
 - `fgets(line, sizeof(line), stdin)`
 - sscanf使用同scanf,第一个参数是字符串
@@ -103,3 +103,4 @@
 - 负进制转换和正进制的共同点：mod
 - sort+unique去重
 - 每个合数都有小于sqrt的最小质因子
+- C的类型转换是(double)a
