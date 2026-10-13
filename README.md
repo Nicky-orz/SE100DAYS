@@ -60,6 +60,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day46 | 10-10 | 2 | 约数求和、贪心切正方形 | 已完成 |
 | Day47 | 10-11 | 2 | 前缀和、二维前缀和、矩形最大和 | 已完成 |
 | Day48 | 10-12 | 1 | 二分答案、前缀和批量统计 | 已完成 |
+| Day49 | 10-13 | 1 | 差分数组、区间加法、前缀恢复 | 已完成 |
 
 ---
 
@@ -634,6 +635,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：二分答案、前缀和/区间统计、权值判断、区间批量查询加速
 - 文件：`prefixsum/p1314clevermanager.cpp`
 - 易错点：二分的判定函数要统计每个区间在某个阈值 `W` 下的收益，`add[i]` 记录满足条件的价值累加，`num[i]` 记录满足条件的数量,每个区间的收益写成 `(num[r]-num[l-1]) * (add[r]-add[l-1])`
+- 状态：已完成
+
+---
+
+## Day49 - 10-13
+
+- [P2367](https://www.luogu.com.cn/problem/P2367)
+
+- 知识点：差分数组、区间加法、前缀和恢复、区间修改复杂度优化
+- 文件：`prefixsum/p2367chinesescore.cpp`
+- 易错点：先用 `d[i] = a[i] - a[i-1]` 建立差分数组，区间 `[x,y]` 加 z 只需执行 `d[x] += z`、`d[y+1] -= z`，不能直接逐项修改；所有修改完成后必须从左到右累加差分恢复每个位置的最终值，并在恢复过程中同步维护最小值；`y+1` 可能等于 `n+1`，数组要预留边界
 - 状态：已完成
 
 ## 知识体系
