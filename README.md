@@ -63,6 +63,8 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day49 | 10-13 | 1 | 差分数组、区间加法、前缀恢复 | 已完成 |
 | Day50 | 10-14 | 1 | 差分数组、矩阵覆盖、二维前缀恢复 | 已完成 |
 | Day51 | 10-15 | 1 | 离散化 | 已完成 |
+| Day52 | 10-16 | 1 | 坐标离散化、二维差分、矩形面积并集 | 已完成 |
+| Day53 | 10-17 | 1 | 二维前缀和、定长正方形最大和 | 已完成 |
 
 ---
 
@@ -670,6 +672,28 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：离散化
 - 文件：`prefixsum/p1496burnedChibi.cpp`
 - 易错点：先按区间左端点排序，再维护当前合并段 `[l,r]`；若下一个区间的左端点 `a[i].first <= r`，应扩展 `r=max(r,a[i].second)`，不能只比较右端点；遇到不相交区间时先把当前长度 `r-l` 加入答案，再重置边界，遍历结束后还要补加最后一段
+- 状态：已完成
+
+---
+
+## Day52 - 10-16
+
+- [P1884](https://www.luogu.com.cn/problem/P1884)
+
+- 知识点：坐标离散化、`lower_bound` 映射、二维差分、扫描网格计算矩形面积并集
+- 文件：`prefixsum/p1884OverplantingS.cpp`
+- 易错点：矩形覆盖范围用端点坐标离散化后，必须保留每个 `x1/x2`、`y1/y2` 并排序去重，再用 `lower_bound` 映射；二维差分更新四个角时要使用左下加、右下减、左上减、右上加，恢复后只统计 `diff[i][j] > 0` 的小网格；面积不能只数离散格子数量，而要乘真实宽高 `(xs[i+1]-xs[i])*(ys[j+1]-ys[j])`，答案用 long long
+- 状态：已完成
+
+---
+
+## Day53 - 10-17
+
+- [P2004](https://www.luogu.com.cn/problem/P2004)
+
+- 知识点：二维前缀和、固定大小正方形枚举、最大子矩阵和、边界控制
+- 文件：`prefixsum/p2004filedchoice.cpp`
+- 易错点：二维前缀和要用 `a[i][j] = a[i-1][j] + a[i][j-1] - a[i-1][j-1] + t` 消除重叠区域；只有 `i >= c && j >= c` 时右下角 `(i,j)` 才能作为 c×c 正方形终点，面积和用四个角相减，左上角坐标为 `(i-c+1,j-c+1)`；`ans` 不能初始化为 0，否则全负矩阵会错误保留 0，代码用 -1 依赖题目数据范围，坐标变量需在首次比较前保证能被赋值
 - 状态：已完成
 
 ## 知识体系
