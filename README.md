@@ -66,6 +66,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day52 | 10-16 | 1 | 坐标离散化、二维差分、矩形面积并集 | 已完成 |
 | Day53 | 10-17 | 1 | 二维前缀和、定长正方形最大和 | 已完成 |
 | Day54 | 10-18 | 1 | 二维前缀和、二分答案、贪心切分 | 已完成 |
+| Day55 | 10-19 | 2 | 差分数组、二分答案、区间计数、贪心 | 已完成 |
 
 ---
 
@@ -706,6 +707,18 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：二维前缀和、二分答案、按行贪心切分、矩形区域和
 - 文件：`prefixsum/p3017brownieslicingg.cpp`
 - 易错点：判定某个答案时先按行累加，达到目标后再从左到右贪心切出足够多的列块；列块的前缀和必须同时减去旧行边界和旧列边界，切出一条横带后要清零累计巧克力并把起始行移到下一行；二分上界要留出总和除以块数后的不可行位置，最后输出 `l-1`
+- 状态：已完成
+
+---
+
+## Day55 - 10-19
+
+- [P1083](https://www.luogu.com.cn/problem/P1083) [NOIP 2012 提高组] 借教室
+- [P3406](https://www.luogu.com.cn/problem/P3406) 海底高铁
+
+- 知识点：差分数组、二分答案、区间资源校验、路径经过次数统计、贪心取最小费用
+- 文件：`prefixsum/p1083borrowclassroom.cpp`、`prefixsum/p3406subwayundersea.cpp`
+- 易错点：借教室的判定要按订单前缀重建差分并检查每天累计需求，二分查找的是第一个不可满足的订单，搜索区间要包含 `m+1` 这个“全部满足”哨兵；海底高铁要把每次相邻城市移动转成区间加一，差分恢复后比较该段的单买费用 `pass*a` 与办卡工本费加充值费 `pass*b+c`，城市顺序可能反向必须用较小端点和较大端点更新
 - 状态：已完成
 
 ## 知识体系
