@@ -67,6 +67,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day53 | 10-17 | 1 | 二维前缀和、定长正方形最大和 | 已完成 |
 | Day54 | 10-18 | 1 | 二维前缀和、二分答案、贪心切分 | 已完成 |
 | Day55 | 10-19 | 2 | 差分数组、二分答案、区间计数、贪心 | 已完成 |
+| Day56 | 10-20 | 2 | 差分数组、区间翻转、贪心 | 已完成 |
 
 ---
 
@@ -719,6 +720,18 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：差分数组、二分答案、区间资源校验、路径经过次数统计、贪心取最小费用
 - 文件：`prefixsum/p1083borrowclassroom.cpp`、`prefixsum/p3406subwayundersea.cpp`
 - 易错点：借教室的判定要按订单前缀重建差分并检查每天累计需求，二分查找的是第一个不可满足的订单，搜索区间要包含 `m+1` 这个“全部满足”哨兵；海底高铁要把每次相邻城市移动转成区间加一，差分恢复后比较该段的单买费用 `pass*a` 与办卡工本费加充值费 `pass*b+c`，城市顺序可能反向必须用较小端点和较大端点更新
+- 状态：已完成
+
+---
+
+## Day56 - 10-20
+
+- [P4552](https://www.luogu.com.cn/problem/P4552) [Poetize6] IncDec Sequence
+- [P2882](https://www.luogu.com.cn/problem/P2882) [USACO07MAR] Face The Right Way G
+
+- 知识点：差分数组、区间加减、正负总量、区间翻转、贪心判定
+- 文件：`prefixsum/p4552incdecsequence.cpp`、`prefixsum/p2882facetherightway.cpp`
+- 易错点：P4552差分，正负对应，把相邻差分的正负总量 `sum`、`nsum` 转成区间操作，推出不同统一数的次数公式，最少次数取 `max(sum,nsum)`，最终统一值的数量是 `abs(sum-nsum)+1`；代码从第 2 项统计差分，不能把 `dif[1]` 混入总量。P2882固定长度 `k` 后按位置维护翻转影响的奇偶性，当前方向不对就立刻翻转 `[i,i+k-1]`，超出 `n` 直接判不可行；枚举所有 `k` 时用操作次数最小、长度最小更新答案。
 - 状态：已完成
 
 ## 知识体系

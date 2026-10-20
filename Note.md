@@ -103,6 +103,11 @@
     |`<a href="地址">`|超链接|
     |`<form>`|表单|
     |`<input>`|输入控件|
+    |`<button>`|按钮|
+    |`<select>`|下拉菜单|
+    |`type="submit"`|提交表单|
+    |`type="radio"`|单选按钮|
+    |`type=checkbox`|复选框|
 - css像具体美化，html像框架
 - `class`类是运用一组封装好的属性的方法
 - 单独的css文件通过link写在head处，eg：`<link href="" rel="stylesheet>"`
@@ -126,6 +131,25 @@
   - 单双引号都可行，类python
   - `<script src="">`链接
 
+## lec9 Flask
+- `app = Flask(__name__)`创建一个名为app的变量并将当前文件转换成一个flask应用，`__name__`指的是当前文件的名称
+- python装饰器是一种特殊函数，影响紧随其后的函数的行为
+- `@app.route("/")`将下一行的函数与/路由
+- `render_template("index.html")`返回templates文件夹中的index.html
+- `request.args["name"]`返回url中key==name的value，request.arg是一个字典
+- `request.args.get("name","world")`返回value，或者默认值world
+- `{{}}`表示占位符，来自Jinja模板库
+- `{% block name %}{% endblock %}`代码块的占位符，使用时在html首行加上`{% extends "layout.html" %}`，在目标代码块前后加上相同的内容
+- `{% if %} ... {% else %} ... {% endif%}`Jinja支持在html中进行逻辑判断
+- `{% for ... in ... %}...{% endfor %}`Jinja支持在html中进行循环
+- `<form method="get">`将表单内容输入url中
+- `post`方法可以将参数隐藏，但是默认路由是get，因此需要加上参数`methods=[POST]`，且`request.args.get`改为`request.form.get`来接受表单数据
+- `request.method`返回http报文中的method
+- `redirect("")`重定向
+- 图片音视频等静态资源放在static文件夹
+- MVC模型：model,viewer,controller
+- session服务端存储和使用cookies，类似专属全局字典
+- API只返回所需数据
 
 # Gain From CPL
 
