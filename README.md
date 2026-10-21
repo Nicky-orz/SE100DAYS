@@ -68,6 +68,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day54 | 10-18 | 1 | 二维前缀和、二分答案、贪心切分 | 已完成 |
 | Day55 | 10-19 | 2 | 差分数组、二分答案、区间计数、贪心 | 已完成 |
 | Day56 | 10-20 | 2 | 差分数组、区间翻转、贪心 | 已完成 |
+| Day57 | 10-21 | 2 | 扫描线、滑动窗口、离散化 | 已完成 |
 
 ---
 
@@ -732,6 +733,18 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：差分数组、区间加减、正负总量、区间翻转、贪心判定
 - 文件：`prefixsum/p4552incdecsequence.cpp`、`prefixsum/p2882facetherightway.cpp`
 - 易错点：P4552差分，正负对应，把相邻差分的正负总量 `sum`、`nsum` 转成区间操作，推出不同统一数的次数公式，最少次数取 `max(sum,nsum)`，最终统一值的数量是 `abs(sum-nsum)+1`；代码从第 2 项统计差分，不能把 `dif[1]` 混入总量。P2882固定长度 `k` 后按位置维护翻转影响的奇偶性，当前方向不对就立刻翻转 `[i,i+k-1]`，超出 `n` 直接判不可行；枚举所有 `k` 时用操作次数最小、长度最小更新答案。
+- 状态：已完成
+
+---
+
+## Day57 - 10-21
+
+- [P1904](https://www.luogu.com.cn/problem/P1904) 天际线
+- [P3029](https://www.luogu.com.cn/problem/P3029) [USACO11NOV] Cow Lineup S
+
+- 知识点：扫描线思想、区间最高值、滑动窗口、坐标离散化、双指针
+- 文件：`prefixsum/p1904skyline.cpp`、`prefixsum/p3029CowLinup.cpp`
+- 易错点：P1904 将每栋楼的 `[l,r)` 区间逐点更新为最高高度，遍历 `Min..Max` 时只在 `h[i]` 与前一位置不同处输出折点，右端点必须不覆盖；P3029 先压缩品种 ID，再按坐标排序，用窗口内每种品种计数和 `dis==tot` 判定覆盖全部品种，收缩左端点后用 `cow[r].x-cow[l].x` 更新最小成本，不能把牛的数量当作品种数。
 - 状态：已完成
 
 ## 知识体系
