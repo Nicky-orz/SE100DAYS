@@ -1,0 +1,2039 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mingw32-make.exe"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "c:/MinGW/bin/"
+      - "/MinGW/bin/"
+      - "/REGISTRY-NOTFOUND/MinGW/bin/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/mingw32-make.exe.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/mingw32-make.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Mingw64/mingw64/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build/CMakeFiles/4.4.4/CompilerIdC/a.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/ar.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/ranlib.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/strip.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/strip.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/ld.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/ld.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/nm.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/nm.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/objdump.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/objdump.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/objcopy.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/objcopy.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/readelf.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/readelf.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/dlltool.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/dlltool.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/addr2line.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/addr2line.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/tapi.com"
+      - "C:/Program Files/Mingw64/mingw64/bin/tapi.exe"
+      - "C:/Program Files/Mingw64/mingw64/bin/tapi"
+      - "C:/Program Files/Mingw64/usr/bin/tapi.com"
+      - "C:/Program Files/Mingw64/usr/bin/tapi.exe"
+      - "C:/Program Files/Mingw64/usr/bin/tapi"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/tapi.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/tapi.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/tapi"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/tapi.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/tapi.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/tapi"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/tapi.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/tapi.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/tapi"
+      - "C:/Windows/System32/tapi.com"
+      - "C:/Windows/System32/tapi.exe"
+      - "C:/Windows/System32/tapi"
+      - "C:/Windows/tapi.com"
+      - "C:/Windows/tapi.exe"
+      - "C:/Windows/tapi"
+      - "C:/Windows/System32/wbem/tapi.com"
+      - "C:/Windows/System32/wbem/tapi.exe"
+      - "C:/Windows/System32/wbem/tapi"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi"
+      - "C:/Windows/System32/OpenSSH/tapi.com"
+      - "C:/Windows/System32/OpenSSH/tapi.exe"
+      - "C:/Windows/System32/OpenSSH/tapi"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/tapi.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/tapi.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/tapi"
+      - "C:/Program Files/dotnet/tapi.com"
+      - "C:/Program Files/dotnet/tapi.exe"
+      - "C:/Program Files/dotnet/tapi"
+      - "C:/Program Files/Mingw64/mingw64/lib/tapi.com"
+      - "C:/Program Files/Mingw64/mingw64/lib/tapi.exe"
+      - "C:/Program Files/Mingw64/mingw64/lib/tapi"
+      - "D:/1_study/Git/cmd/tapi.com"
+      - "D:/1_study/Git/cmd/tapi.exe"
+      - "D:/1_study/Git/cmd/tapi"
+      - "C:/Program Files/nodejs/tapi.com"
+      - "C:/Program Files/nodejs/tapi.exe"
+      - "C:/Program Files/nodejs/tapi"
+      - "C:/Program Files/OpenSSL-Win64/bin/tapi.com"
+      - "C:/Program Files/OpenSSL-Win64/bin/tapi.exe"
+      - "C:/Program Files/OpenSSL-Win64/bin/tapi"
+      - "C:/Program Files/CMake/bin/tapi.com"
+      - "C:/Program Files/CMake/bin/tapi.exe"
+      - "C:/Program Files/CMake/bin/tapi"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/tapi.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/tapi.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/tapi"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/tapi.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/tapi.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/tapi"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/tapi.com"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/tapi.exe"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/tapi"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/tapi.com"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/tapi.exe"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/tapi"
+      - "D:/1_study/Microsoft VS Code/bin/tapi.com"
+      - "D:/1_study/Microsoft VS Code/bin/tapi.exe"
+      - "D:/1_study/Microsoft VS Code/bin/tapi"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/tapi.com"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/tapi.exe"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/tapi"
+      - "C:/Users/admin/AppData/Roaming/npm/tapi.com"
+      - "C:/Users/admin/AppData/Roaming/npm/tapi.exe"
+      - "C:/Users/admin/AppData/Roaming/npm/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-16.2"
+      - "gcc-ar-16"
+      - "gcc-ar16"
+      - "gcc-ar"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ar-16.2.com"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ar-16.2.exe"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ar-16.2"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ar-16.2.com"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ar-16.2.exe"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ar-16.2"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ar-16.2.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ar-16.2.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ar-16.2"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ar-16.2.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ar-16.2.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ar-16.2"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16.2.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16.2.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16.2"
+      - "C:/Windows/System32/gcc-ar-16.2.com"
+      - "C:/Windows/System32/gcc-ar-16.2.exe"
+      - "C:/Windows/System32/gcc-ar-16.2"
+      - "C:/Windows/gcc-ar-16.2.com"
+      - "C:/Windows/gcc-ar-16.2.exe"
+      - "C:/Windows/gcc-ar-16.2"
+      - "C:/Windows/System32/wbem/gcc-ar-16.2.com"
+      - "C:/Windows/System32/wbem/gcc-ar-16.2.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-16.2"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.2.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.2.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.2"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.2.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.2.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.2"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16.2.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16.2.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16.2"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16.2.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16.2.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16.2"
+      - "C:/Program Files/dotnet/gcc-ar-16.2.com"
+      - "C:/Program Files/dotnet/gcc-ar-16.2.exe"
+      - "C:/Program Files/dotnet/gcc-ar-16.2"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ar-16.2.com"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ar-16.2.exe"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ar-16.2"
+      - "D:/1_study/Git/cmd/gcc-ar-16.2.com"
+      - "D:/1_study/Git/cmd/gcc-ar-16.2.exe"
+      - "D:/1_study/Git/cmd/gcc-ar-16.2"
+      - "C:/Program Files/nodejs/gcc-ar-16.2.com"
+      - "C:/Program Files/nodejs/gcc-ar-16.2.exe"
+      - "C:/Program Files/nodejs/gcc-ar-16.2"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ar-16.2.com"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ar-16.2.exe"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ar-16.2"
+      - "C:/Program Files/CMake/bin/gcc-ar-16.2.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-16.2.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-16.2"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.2.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.2.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.2"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ar-16.2.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ar-16.2.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ar-16.2"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.2.com"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.2.exe"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.2"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ar-16.2.com"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ar-16.2.exe"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ar-16.2"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ar-16.2.com"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ar-16.2.exe"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ar-16.2"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ar-16.2.com"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ar-16.2.exe"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ar-16.2"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ar-16.2.com"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ar-16.2.exe"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ar-16.2"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ar-16.com"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ar-16.exe"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ar-16"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ar-16.com"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ar-16.exe"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ar-16"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ar-16.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ar-16.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ar-16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ar-16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ar-16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ar-16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar-16"
+      - "C:/Windows/System32/gcc-ar-16.com"
+      - "C:/Windows/System32/gcc-ar-16.exe"
+      - "C:/Windows/System32/gcc-ar-16"
+      - "C:/Windows/gcc-ar-16.com"
+      - "C:/Windows/gcc-ar-16.exe"
+      - "C:/Windows/gcc-ar-16"
+      - "C:/Windows/System32/wbem/gcc-ar-16.com"
+      - "C:/Windows/System32/wbem/gcc-ar-16.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-16"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-16"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar-16"
+      - "C:/Program Files/dotnet/gcc-ar-16.com"
+      - "C:/Program Files/dotnet/gcc-ar-16.exe"
+      - "C:/Program Files/dotnet/gcc-ar-16"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ar-16.com"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ar-16.exe"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ar-16"
+      - "D:/1_study/Git/cmd/gcc-ar-16.com"
+      - "D:/1_study/Git/cmd/gcc-ar-16.exe"
+      - "D:/1_study/Git/cmd/gcc-ar-16"
+      - "C:/Program Files/nodejs/gcc-ar-16.com"
+      - "C:/Program Files/nodejs/gcc-ar-16.exe"
+      - "C:/Program Files/nodejs/gcc-ar-16"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ar-16.com"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ar-16.exe"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ar-16"
+      - "C:/Program Files/CMake/bin/gcc-ar-16.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-16.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-16"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ar-16.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ar-16.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ar-16"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.com"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ar-16.exe"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ar-16"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ar-16.com"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ar-16.exe"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ar-16"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ar-16.com"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ar-16.exe"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ar-16"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ar-16.com"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ar-16.exe"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ar-16"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ar-16.com"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ar-16.exe"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ar-16"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ar16.com"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ar16.exe"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ar16"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ar16.com"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ar16.exe"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ar16"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ar16.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ar16.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ar16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ar16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ar16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ar16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ar16"
+      - "C:/Windows/System32/gcc-ar16.com"
+      - "C:/Windows/System32/gcc-ar16.exe"
+      - "C:/Windows/System32/gcc-ar16"
+      - "C:/Windows/gcc-ar16.com"
+      - "C:/Windows/gcc-ar16.exe"
+      - "C:/Windows/gcc-ar16"
+      - "C:/Windows/System32/wbem/gcc-ar16.com"
+      - "C:/Windows/System32/wbem/gcc-ar16.exe"
+      - "C:/Windows/System32/wbem/gcc-ar16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16"
+      - "C:/Windows/System32/OpenSSH/gcc-ar16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar16"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar16.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar16.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar16"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar16.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar16.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ar16"
+      - "C:/Program Files/dotnet/gcc-ar16.com"
+      - "C:/Program Files/dotnet/gcc-ar16.exe"
+      - "C:/Program Files/dotnet/gcc-ar16"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ar16.com"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ar16.exe"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ar16"
+      - "D:/1_study/Git/cmd/gcc-ar16.com"
+      - "D:/1_study/Git/cmd/gcc-ar16.exe"
+      - "D:/1_study/Git/cmd/gcc-ar16"
+      - "C:/Program Files/nodejs/gcc-ar16.com"
+      - "C:/Program Files/nodejs/gcc-ar16.exe"
+      - "C:/Program Files/nodejs/gcc-ar16"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ar16.com"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ar16.exe"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ar16"
+      - "C:/Program Files/CMake/bin/gcc-ar16.com"
+      - "C:/Program Files/CMake/bin/gcc-ar16.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar16"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar16.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar16.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar16"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ar16.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ar16.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ar16"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ar16.com"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ar16.exe"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ar16"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ar16.com"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ar16.exe"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ar16"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ar16.com"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ar16.exe"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ar16"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ar16.com"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ar16.exe"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ar16"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ar16.com"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ar16.exe"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ar16"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ar.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/gcc-ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-16.2"
+      - "gcc-ranlib-16"
+      - "gcc-ranlib16"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ranlib-16.2.com"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ranlib-16.2"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ranlib-16.2.com"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ranlib-16.2"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ranlib-16.2.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ranlib-16.2"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ranlib-16.2.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ranlib-16.2.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ranlib-16.2"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16.2.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16.2.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16.2"
+      - "C:/Windows/System32/gcc-ranlib-16.2.com"
+      - "C:/Windows/System32/gcc-ranlib-16.2.exe"
+      - "C:/Windows/System32/gcc-ranlib-16.2"
+      - "C:/Windows/gcc-ranlib-16.2.com"
+      - "C:/Windows/gcc-ranlib-16.2.exe"
+      - "C:/Windows/gcc-ranlib-16.2"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.2.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.2.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.2"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.2.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.2.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.2"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.2.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.2.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.2"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16.2.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16.2.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16.2"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16.2.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16.2"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.2.com"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.2"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ranlib-16.2.com"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ranlib-16.2"
+      - "D:/1_study/Git/cmd/gcc-ranlib-16.2.com"
+      - "D:/1_study/Git/cmd/gcc-ranlib-16.2.exe"
+      - "D:/1_study/Git/cmd/gcc-ranlib-16.2"
+      - "C:/Program Files/nodejs/gcc-ranlib-16.2.com"
+      - "C:/Program Files/nodejs/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib-16.2"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ranlib-16.2.com"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ranlib-16.2"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16.2.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16.2.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16.2"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.2.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.2.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.2"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ranlib-16.2.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ranlib-16.2.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ranlib-16.2"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.2.com"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.2.exe"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.2"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ranlib-16.2.com"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ranlib-16.2.exe"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ranlib-16.2"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ranlib-16.2.com"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ranlib-16.2.exe"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ranlib-16.2"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16.2.com"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16.2.exe"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16.2"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ranlib-16.2.com"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ranlib-16.2.exe"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ranlib-16.2"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ranlib-16.com"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ranlib-16.exe"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ranlib-16"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ranlib-16.com"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ranlib-16.exe"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ranlib-16"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ranlib-16.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ranlib-16.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ranlib-16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ranlib-16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ranlib-16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ranlib-16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib-16"
+      - "C:/Windows/System32/gcc-ranlib-16.com"
+      - "C:/Windows/System32/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/gcc-ranlib-16"
+      - "C:/Windows/gcc-ranlib-16.com"
+      - "C:/Windows/gcc-ranlib-16.exe"
+      - "C:/Windows/gcc-ranlib-16"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-16"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-16"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib-16"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.com"
+      - "C:/Program Files/dotnet/gcc-ranlib-16.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib-16"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ranlib-16.com"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ranlib-16.exe"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ranlib-16"
+      - "D:/1_study/Git/cmd/gcc-ranlib-16.com"
+      - "D:/1_study/Git/cmd/gcc-ranlib-16.exe"
+      - "D:/1_study/Git/cmd/gcc-ranlib-16"
+      - "C:/Program Files/nodejs/gcc-ranlib-16.com"
+      - "C:/Program Files/nodejs/gcc-ranlib-16.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib-16"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ranlib-16.com"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ranlib-16.exe"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ranlib-16"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-16"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ranlib-16.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ranlib-16.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ranlib-16"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.com"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16.exe"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-16"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ranlib-16.com"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ranlib-16.exe"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ranlib-16"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ranlib-16.com"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ranlib-16.exe"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ranlib-16"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16.com"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16.exe"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ranlib-16"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ranlib-16.com"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ranlib-16.exe"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ranlib-16"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ranlib16.com"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ranlib16.exe"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ranlib16"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ranlib16.com"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ranlib16.exe"
+      - "C:/Program Files/Mingw64/usr/bin/gcc-ranlib16"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ranlib16.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ranlib16.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/gcc-ranlib16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ranlib16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ranlib16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/gcc-ranlib16"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib16.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib16.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/gcc-ranlib16"
+      - "C:/Windows/System32/gcc-ranlib16.com"
+      - "C:/Windows/System32/gcc-ranlib16.exe"
+      - "C:/Windows/System32/gcc-ranlib16"
+      - "C:/Windows/gcc-ranlib16.com"
+      - "C:/Windows/gcc-ranlib16.exe"
+      - "C:/Windows/gcc-ranlib16"
+      - "C:/Windows/System32/wbem/gcc-ranlib16.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib16.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib16"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib16.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib16.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib16"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib16.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib16.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib16"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib16.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib16.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/gcc-ranlib16"
+      - "C:/Program Files/dotnet/gcc-ranlib16.com"
+      - "C:/Program Files/dotnet/gcc-ranlib16.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib16"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ranlib16.com"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ranlib16.exe"
+      - "C:/Program Files/Mingw64/mingw64/lib/gcc-ranlib16"
+      - "D:/1_study/Git/cmd/gcc-ranlib16.com"
+      - "D:/1_study/Git/cmd/gcc-ranlib16.exe"
+      - "D:/1_study/Git/cmd/gcc-ranlib16"
+      - "C:/Program Files/nodejs/gcc-ranlib16.com"
+      - "C:/Program Files/nodejs/gcc-ranlib16.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib16"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ranlib16.com"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ranlib16.exe"
+      - "C:/Program Files/OpenSSL-Win64/bin/gcc-ranlib16"
+      - "C:/Program Files/CMake/bin/gcc-ranlib16.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib16.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib16"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib16.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib16.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib16"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ranlib16.com"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ranlib16.exe"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/gcc-ranlib16"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ranlib16.com"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ranlib16.exe"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/gcc-ranlib16"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ranlib16.com"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ranlib16.exe"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/gcc-ranlib16"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ranlib16.com"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ranlib16.exe"
+      - "D:/1_study/Microsoft VS Code/bin/gcc-ranlib16"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ranlib16.com"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ranlib16.exe"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/gcc-ranlib16"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ranlib16.com"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ranlib16.exe"
+      - "C:/Users/admin/AppData/Roaming/npm/gcc-ranlib16"
+      - "C:/Program Files/Mingw64/mingw64/bin/gcc-ranlib.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/gcc-ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU.cmake:167 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C.cmake:2 (__windows_compiler_gnu)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "windres"
+      - "windres"
+    candidate_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/"
+      - "C:/Program Files/Mingw64/usr/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Mingw64/mingw64/lib/"
+      - "D:/1_study/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/OpenSSL-Win64/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin/"
+      - "D:/1_study/Microsoft VS Code/bin/"
+      - "C:/Users/admin/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/1024/bin/"
+      - "C:/Program Files (x86)/1024/sbin/"
+      - "C:/Program Files (x86)/1024/"
+    searched_directories:
+      - "C:/Program Files/Mingw64/mingw64/bin/windres.com"
+    found: "C:/Program Files/Mingw64/mingw64/bin/windres.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:\\Program Files\\Mingw64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "C:\\windows\\system32"
+        - "C:/windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:/windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Mingw64\\mingw64\\bin"
+        - "C:/Program Files/Mingw64/mingw64/lib"
+        - "D:\\1_study\\Git\\cmd"
+        - "C:/Program Files/nodejs/"
+        - "C:\\Program Files\\OpenSSL-Win64\\bin"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:/Users/admin/AppData/Local/Programs/Python/Python310/"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:/ffmpeg-8.1.2-full_build-shared/ffmpeg-8.1.2-full_build-shared/bin"
+        - "D:\\1_study\\Microsoft VS Code\\bin"
+        - "C:/Users/admin/AppData/Local/GitHubDesktop/bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/1024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/1024"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build/CMakeFiles/CMakeScratch/TryCompile-af3x4j"
+      binary: "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build/CMakeFiles/CMakeScratch/TryCompile-af3x4j"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build/CMakeFiles/CMakeScratch/TryCompile-af3x4j'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/Mingw64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_e8484/fast
+        C:/PROGRA~1/Mingw64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_e8484.dir\\build.make CMakeFiles/cmTC_e8484.dir/build
+        mingw32-make[1]: Entering directory 'D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build/CMakeFiles/CMakeScratch/TryCompile-af3x4j'
+        Building C object CMakeFiles/cmTC_e8484.dir/CMakeCCompilerABI.c.obj
+        "C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe"   -v -o CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-16.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-tls --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 16.2.0 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_e8484.dir\\'
+         C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/cc1.exe -quiet -v -iprefix C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/ -U_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_e8484.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\admin\\AppData\\Local\\Temp\\ccZZkr29.s
+        GNU C23 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) version 16.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 16.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Program Files/Mingw64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include"
+        ignoring nonexistent directory "C:/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include"
+        ignoring duplicate directory "C:/Program Files/Mingw64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed"
+        ignoring duplicate directory "C:/Program Files/Mingw64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "C:/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include
+         C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed
+         C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 14c45cfbdb68f6f3d4cc3fa2447a1bd1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_e8484.dir\\'
+         C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.obj C:\\Users\\admin\\AppData\\Local\\Temp\\ccZZkr29.s
+        GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726
+        COMPILER_PATH=C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/;C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e8484.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_e8484.dir\\link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=C:/Program\\ Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-16.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-tls --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 16.2.0 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 
+        COMPILER_PATH=C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/;C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e8484.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_e8484.'
+         C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe -plugin C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\admin\\AppData\\Local\\Temp\\ccW9O0C0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_e8484.exe C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_e8484.dir/objects.a --no-whole-archive --out-implib libcmTC_e8484.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+        collect2 version 16.2.0
+        C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\admin\\AppData\\Local\\Temp\\ccW9O0C0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_e8484.exe C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_e8484.dir/objects.a --no-whole-archive --out-implib libcmTC_e8484.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+        GNU ld (GNU Binutils) 2.47.20260726
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e8484.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_e8484.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_e8484.dir/objects.a
+        "C:\\Program Files\\Mingw64\\mingw64\\bin\\ar.exe" qc CMakeFiles\\cmTC_e8484.dir/objects.a @CMakeFiles\\cmTC_e8484.dir\\objects1.rsp
+        "C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe"  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_e8484.dir/objects.a -Wl,--no-whole-archive -o cmTC_e8484.exe -Wl,--out-implib,libcmTC_e8484.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build/CMakeFiles/CMakeScratch/TryCompile-af3x4j'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+          add: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+          add: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include] ==> [C:/Program Files/Mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+        collapse include dir [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed] ==> [C:/Program Files/Mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+        collapse include dir [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Program Files/Mingw64/mingw64/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Program Files/Mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include;C:/Program Files/Mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed;C:/Program Files/Mingw64/mingw64/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: 'D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build/CMakeFiles/CMakeScratch/TryCompile-af3x4j']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/Mingw64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_e8484/fast]
+        ignore line: [C:/PROGRA~1/Mingw64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_e8484.dir\\build.make CMakeFiles/cmTC_e8484.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build/CMakeFiles/CMakeScratch/TryCompile-af3x4j']
+        ignore line: [Building C object CMakeFiles/cmTC_e8484.dir/CMakeCCompilerABI.c.obj]
+        ignore line: ["C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe"   -v -o CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        link line: [Configured with: ../../../src/gcc-16.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-tls --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'] ==> linker [Configured with: ../../../src/gcc-16.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-tls --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/bin/ld.exe]
+        ignore line: [Configured with: ../../../src/gcc-16.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-tls --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 16.2.0 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_e8484.dir\\']
+        ignore line: [ C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/cc1.exe -quiet -v -iprefix C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/ -U_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_e8484.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\admin\\AppData\\Local\\Temp\\ccZZkr29.s]
+        ignore line: [GNU C23 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) version 16.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 16.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Program Files/Mingw64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include"]
+        ignore line: [ignoring nonexistent directory "C:/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/Mingw64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/Mingw64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "C:/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+        ignore line: [ C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+        ignore line: [ C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 14c45cfbdb68f6f3d4cc3fa2447a1bd1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_e8484.dir\\']
+        ignore line: [ C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.obj C:\\Users\\admin\\AppData\\Local\\Temp\\ccZZkr29.s]
+        ignore line: [GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726]
+        ignore line: [COMPILER_PATH=C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_e8484.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_e8484.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_e8484.dir\\link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Program\\ Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-16.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-tls --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 16.2.0 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) ]
+        ignore line: [COMPILER_PATH=C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e8484.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_e8484.']
+        link line: [ C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe -plugin C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\admin\\AppData\\Local\\Temp\\ccW9O0C0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_e8484.exe C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_e8484.dir/objects.a --no-whole-archive --out-implib libcmTC_e8484.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker architecture flags [-m;i386pep]
+        ignore line: [ C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe -plugin C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\admin\\AppData\\Local\\Temp\\ccW9O0C0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_e8484.exe C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_e8484.dir/objects.a --no-whole-archive --out-implib libcmTC_e8484.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        ignore line: [collect2 version 16.2.0]
+        link line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\admin\\AppData\\Local\\Temp\\ccW9O0C0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_e8484.exe C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_e8484.dir/objects.a --no-whole-archive --out-implib libcmTC_e8484.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker architecture flags [-m;i386pep;-m;i386pep]
+        ignore line: [C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=C:/Program Files/Mingw64/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\admin\\AppData\\Local\\Temp\\ccW9O0C0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_e8484.exe C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_e8484.dir/objects.a --no-whole-archive --out-implib libcmTC_e8484.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Program Files/Mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        ignore line: [GNU ld (GNU Binutils) 2.47.20260726]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e8484.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_e8484.']
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_e8484.dir/objects.a]
+        ignore line: ["C:\\Program Files\\Mingw64\\mingw64\\bin\\ar.exe" qc CMakeFiles\\cmTC_e8484.dir/objects.a @CMakeFiles\\cmTC_e8484.dir\\objects1.rsp]
+        ignore line: ["C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe"  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_e8484.dir/objects.a -Wl --no-whole-archive -o cmTC_e8484.exe -Wl --out-implib libcmTC_e8484.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [mingw32-make[1]: Leaving directory 'D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build/CMakeFiles/CMakeScratch/TryCompile-af3x4j']
+        ignore line: []
+        ignore line: []
+        linker tool for 'C': ../src/gcc-16.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-tls --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https:/github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/bin/ld.exe -m;i386pep;-m;i386pep
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "../src/gcc-16.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-tls --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https:/github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/bin/ld.exe" "-v"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "../src/gcc-16.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-tls --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https:/github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/bin/ld.exe" "-V"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "../src/gcc-16.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-tls --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https:/github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1620-win32-seh-ucrt-rt_v14-rev1/mingw64/bin/ld.exe" "--version"
+      
+...

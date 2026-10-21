@@ -1,0 +1,20 @@
+[
+{
+  "directory": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/problem-370-workspace/build",
+  "command": "\"C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe\"  @CMakeFiles\\label.dir\\includes_C.rsp -g -o CMakeFiles\\label.dir\\src\\label.c.obj -c D:\\1_study_profile\\code\\github\\SE100DAYS\\oj_pratice\\5-function\\problem-370-workspace\\src\\label.c",
+  "file": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/problem-370-workspace/src/label.c",
+  "output": "CMakeFiles/label.dir/src/label.c.obj"
+},
+{
+  "directory": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/problem-370-workspace/build",
+  "command": "\"C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe\"  @CMakeFiles\\label.dir\\includes_C.rsp -g -o CMakeFiles\\label.dir\\src\\main.c.obj -c D:\\1_study_profile\\code\\github\\SE100DAYS\\oj_pratice\\5-function\\problem-370-workspace\\src\\main.c",
+  "file": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/problem-370-workspace/src/main.c",
+  "output": "CMakeFiles/label.dir/src/main.c.obj"
+},
+{
+  "directory": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/problem-370-workspace/build",
+  "command": "\"C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe\"  @CMakeFiles\\label.dir\\includes_C.rsp -g -o CMakeFiles\\label.dir\\src\\solve.c.obj -c D:\\1_study_profile\\code\\github\\SE100DAYS\\oj_pratice\\5-function\\problem-370-workspace\\src\\solve.c",
+  "file": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/problem-370-workspace/src/solve.c",
+  "output": "CMakeFiles/label.dir/src/solve.c.obj"
+}
+]

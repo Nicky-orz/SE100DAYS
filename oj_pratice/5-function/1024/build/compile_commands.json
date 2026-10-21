@@ -1,0 +1,26 @@
+[
+{
+  "directory": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build",
+  "command": "\"C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe\"  @CMakeFiles\\1024.dir\\includes_C.rsp -g -Wall -Wextra -o CMakeFiles\\1024.dir\\src\\board.c.obj -c D:\\1_study_profile\\code\\github\\SE100DAYS\\oj_pratice\\5-function\\1024\\src\\board.c",
+  "file": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/src/board.c",
+  "output": "CMakeFiles/1024.dir/src/board.c.obj"
+},
+{
+  "directory": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build",
+  "command": "\"C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe\"  @CMakeFiles\\1024.dir\\includes_C.rsp -g -Wall -Wextra -o CMakeFiles\\1024.dir\\src\\main.c.obj -c D:\\1_study_profile\\code\\github\\SE100DAYS\\oj_pratice\\5-function\\1024\\src\\main.c",
+  "file": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/src/main.c",
+  "output": "CMakeFiles/1024.dir/src/main.c.obj"
+},
+{
+  "directory": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build",
+  "command": "\"C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe\"  @CMakeFiles\\1024.dir\\includes_C.rsp -g -Wall -Wextra -o CMakeFiles\\1024.dir\\src\\slide.c.obj -c D:\\1_study_profile\\code\\github\\SE100DAYS\\oj_pratice\\5-function\\1024\\src\\slide.c",
+  "file": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/src/slide.c",
+  "output": "CMakeFiles/1024.dir/src/slide.c.obj"
+},
+{
+  "directory": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/build",
+  "command": "\"C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe\"  @CMakeFiles\\1024.dir\\includes_C.rsp -g -Wall -Wextra -o CMakeFiles\\1024.dir\\src\\view.c.obj -c D:\\1_study_profile\\code\\github\\SE100DAYS\\oj_pratice\\5-function\\1024\\src\\view.c",
+  "file": "D:/1_study_profile/code/github/SE100DAYS/oj_pratice/5-function/1024/src/view.c",
+  "output": "CMakeFiles/1024.dir/src/view.c.obj"
+}
+]

@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/1_study_profile/code/c/problem-380-workspace/build",
+  "command": "\"C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe\"  @CMakeFiles\\hello.dir\\includes_C.rsp -g -o CMakeFiles\\hello.dir\\src\\hello.c.obj -c D:\\1_study_profile\\code\\c\\problem-380-workspace\\src\\hello.c",
+  "file": "D:/1_study_profile/code/c/problem-380-workspace/src/hello.c",
+  "output": "CMakeFiles/hello.dir/src/hello.c.obj"
+},
+{
+  "directory": "D:/1_study_profile/code/c/problem-380-workspace/build",
+  "command": "\"C:\\Program Files\\Mingw64\\mingw64\\bin\\gcc.exe\"  @CMakeFiles\\hello.dir\\includes_C.rsp -g -o CMakeFiles\\hello.dir\\src\\print.c.obj -c D:\\1_study_profile\\code\\c\\problem-380-workspace\\src\\print.c",
+  "file": "D:/1_study_profile/code/c/problem-380-workspace/src/print.c",
+  "output": "CMakeFiles/hello.dir/src/print.c.obj"
+}
+]

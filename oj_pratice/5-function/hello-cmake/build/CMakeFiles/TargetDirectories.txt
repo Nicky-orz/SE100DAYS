@@ -1,0 +1,3 @@
+D:/1_study_profile/code/c/problem-380-workspace/build/CMakeFiles/hello.dir
+D:/1_study_profile/code/c/problem-380-workspace/build/CMakeFiles/edit_cache.dir
+D:/1_study_profile/code/c/problem-380-workspace/build/CMakeFiles/rebuild_cache.dir
