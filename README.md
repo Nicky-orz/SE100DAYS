@@ -69,6 +69,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day55 | 10-19 | 2 | 差分数组、二分答案、区间计数、贪心 | 已完成 |
 | Day56 | 10-20 | 2 | 差分数组、区间翻转、贪心 | 已完成 |
 | Day57 | 10-21 | 2 | 扫描线、滑动窗口、离散化 | 已完成 |
+| Day58 | 10-22 | 1 | 完全背包、最少硬币数 | 已完成 |
 
 ---
 
@@ -745,6 +746,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：扫描线思想、区间最高值、滑动窗口、坐标离散化、双指针
 - 文件：`prefixsum/p1904skyline.cpp`、`prefixsum/p3029CowLinup.cpp`
 - 易错点：P1904 将每栋楼的 `[l,r)` 区间逐点更新为最高高度，遍历 `Min..Max` 时只在 `h[i]` 与前一位置不同处输出折点，右端点必须不覆盖；P3029 先压缩品种 ID，再按坐标排序，用窗口内每种品种计数和 `dis==tot` 判定覆盖全部品种，收缩左端点后用 `cow[r].x-cow[l].x` 更新最小成本，不能把牛的数量当作品种数。
+- 状态：已完成
+
+---
+
+## Day58 - 10-22
+
+- [P2842](https://www.luogu.com.cn/problem/P2842) 纸币问题 1
+
+- 知识点：完全背包、动态规划、最优化问题、无穷大初始化
+- 文件：`dp/p2842cashproblem.cpp`
+- 易错点：每种纸币有无限张，状态 `dp[j]` 表示凑出金额 `j` 的最少张数，因此外层枚举面额、内层金额从 `a[i]` 递增到 `w`，才能重复使用当前纸币；转移为 `dp[j]=min(dp[j],dp[j-a[i]]+1)`，先设 `dp[0]=0`、其余为 `0x3f3f3f3f`，只有前一状态可达时才转移，最终输出 `dp[w]`。
 - 状态：已完成
 
 ## 知识体系
