@@ -71,6 +71,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day57 | 10-21 | 2 | 扫描线、滑动窗口、离散化 | 已完成 |
 | Day58 | 10-22 | 1 | 完全背包、最少硬币数 | 已完成 |
 | Day59 | 10-23 | 1 | 排序、离散化、差分 | 已完成 |
+| Day60 | 10-24 | 3 | 完全背包、排列计数、数字三角形 | 已完成 |
 
 ---
 
@@ -464,7 +465,7 @@ This is a record about a new software engineering student, documenting his 100 d
 
 ### div4的难度前五题太水了，就只写F题进来
 
-- [T789497](https://www.luogu.com.cn/problem/T789497) 【9 月入门赛】月饼调配
+- [LGR-306 Div.4](https://www.luogu.com.cn/contest/354140) 洛谷入门赛 #52 & 中秋赛，A~F 共 6 题（其中 [T789497](https://www.luogu.com.cn/problem/T789497) 【9 月入门赛】月饼调配）
 
 - 知识点：浮点运算与向上取整、循环累加与整除、二维网格与圆的判定、埃氏筛、四连通模拟与贪心换色、树形后序 DFS 与子树权值和
 - 文件：`competition/LGR-306-div4/A.cpp`、`competition/LGR-306-div4/B.cpp`、`competition/LGR-306-div4/C.cpp`、`competition/LGR-306-div4/D.cpp`、`competition/LGR-306-div4/E.cpp`、`competition/LGR-306-div4/F.cpp`
@@ -548,6 +549,8 @@ This is a record about a new software engineering student, documenting his 100 d
 ## Day40 - 10-04
 
 ### 折腾了一天D题，做不出来，用国模跑了两个钟跑出来一个相邻对DP的解法，GPT又给了一个更优化的二维DP，写了题解
+
+- [LGR-305 Div.3](https://www.luogu.com.cn/contest/334135) 洛谷基础赛 #40 & OvOI Round 3，A~D 共 4 题：Antithese、Xterfusion、Crave Wave (Ver. 1)、Crave Wave (Ver. 2)
 
 - 知识点：bitset 标记与统计、枚举 + 按步长扩展、二进制串下标换算与快速幂取模、分类讨论（`p < k`）、动态规划（相邻对状态设计、前缀和 + 滚动数组优化）、离线按参数分组回答
 - 文件：`competition/LGR-305-Div.3/A.cpp`、`competition/LGR-305-Div.3/B.cpp`、`competition/LGR-305-Div.3/C.cpp`、`competition/LGR-305-Div.3/D.cpp`、`competition/LGR-305-Div.3/D-simple.cpp`
@@ -769,6 +772,19 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：排序、稳定排名、离散化、差分数组、双向冒泡排序
 - 文件：`discretization/p4375OutofSorts.cpp`
 - 易错点：双向冒泡每轮同时推动大数向右、小数向左，每次处理一对不同的大小数，所需轮数等于排序后目标排名大于原下标的元素区间重叠最大值；先按值、原下标稳定排序，再对每个 `a[i]>i` 做 `d[i]++、d[a[i]]--`，扫描前缀取峰值，峰值为 0 时仍需输出 1 轮。
+- 状态：已完成
+
+---
+
+## Day60 - 10-24
+
+- [P2834](https://www.luogu.com.cn/problem/P2834) 纸币问题 3
+- [P2840](https://www.luogu.com.cn/problem/P2840) 纸币问题 2
+- [P1216](https://www.luogu.com.cn/problem/P1216) [IOI 1994 / USACO1.5] 数字三角形 Number Triangles
+
+- 知识点：完全背包、组合计数、排列计数、二维 DP
+- 文件：`dp/p2834cashproblem3.cpp`、`dp/p2840cashproblem2.cpp`、`dp/p1216NumberTriangles.cpp`
+- 易错点：P2834 外层枚举面额、金额正序，统计组合；P2840 外层枚举金额，统计排列；P1216 从上一行左上、右上取最大值。
 - 状态：已完成
 
 ## 知识体系
