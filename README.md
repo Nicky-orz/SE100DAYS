@@ -72,6 +72,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day58 | 10-22 | 1 | 完全背包、最少硬币数 | 已完成 |
 | Day59 | 10-23 | 1 | 排序、离散化、差分 | 已完成 |
 | Day60 | 10-24 | 3 | 完全背包、排列计数、数字三角形 | 已完成 |
+| Day61 | 10-25 | 1 | 0/1 背包、动态规划 | 已完成 |
 
 ---
 
@@ -785,6 +786,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：完全背包、组合计数、排列计数、二维 DP
 - 文件：`dp/p2834cashproblem3.cpp`、`dp/p2840cashproblem2.cpp`、`dp/p1216NumberTriangles.cpp`
 - 易错点：P2834 外层枚举面额、金额正序，统计组合；P2840 外层枚举金额，统计排列；P1216 从上一行左上、右上取最大值。
+- 状态：已完成
+
+---
+
+## Day61 - 10-25
+
+- [P1048](https://www.luogu.com.cn/problem/P1048) [NOIP 2005 普及组] 采药
+
+- 知识点：0/1 背包、动态规划、一维状态压缩
+- 文件：`dp/p1048PickHerbs.cpp`
+- 易错点：采药把每株草药视为只能选一次，`dp[j]` 表示总时间不超过 `j` 时的最大价值，转移为 `max(dp[j], dp[j-tim[i]]+val[i])`；必须先枚举草药、再让时间从 `t` 倒序到 `tim[i]`，避免同一株在一次循环中被重复选取，容量不足的状态保持原值。
 - 状态：已完成
 
 ## 知识体系
