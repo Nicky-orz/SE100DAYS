@@ -73,6 +73,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day59 | 10-23 | 1 | 排序、离散化、差分 | 已完成 |
 | Day60 | 10-24 | 3 | 完全背包、排列计数、数字三角形 | 已完成 |
 | Day61 | 10-25 | 1 | 0/1 背包、动态规划 | 已完成 |
+| Day62 | 10-26 | 1 | DAG 路径 DP、路径回溯 | 已完成 |
 
 ---
 
@@ -797,6 +798,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：0/1 背包、动态规划、一维状态压缩
 - 文件：`dp/p1048PickHerbs.cpp`
 - 易错点：采药把每株草药视为只能选一次，`dp[j]` 表示总时间不超过 `j` 时的最大价值，转移为 `max(dp[j], dp[j-tim[i]]+val[i])`；必须先枚举草药、再让时间从 `t` 倒序到 `tim[i]`，避免同一株在一次循环中被重复选取，容量不足的状态保持原值。
+- 状态：已完成
+
+---
+
+## Day62 - 10-26
+
+- [P2196](https://www.luogu.com.cn/problem/P2196) [NOIP 1996 提高组] 挖地雷
+
+- 知识点：DAG 上的最长路 DP、邻接矩阵、前驱数组路径回溯
+- 文件：`dp/p2196mine.cpp`
+- 易错点：地窖只能从小编号走向大编号，天然形成 DAG；按输入的上三角关系枚举 `i<j`，若有边就用 `dp[j]=max(dp[j],dp[i]+a[j])` 更新累计地雷数，并同步令 `pre[j]=i`，最后从最大值所在的 `t` 递归回溯前驱再输出路径，不能只输出最大总数。
 - 状态：已完成
 
 ## 知识体系
