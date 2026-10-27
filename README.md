@@ -74,6 +74,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day60 | 10-24 | 3 | 完全背包、排列计数、数字三角形 | 已完成 |
 | Day61 | 10-25 | 1 | 0/1 背包、动态规划 | 已完成 |
 | Day62 | 10-26 | 1 | DAG 路径 DP、路径回溯 | 已完成 |
+| Day63 | 10-27 | 5 | 网格 DP、0/1 背包、计数 DP | 已完成 |
 
 ---
 
@@ -809,6 +810,21 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：DAG 上的最长路 DP、邻接矩阵、前驱数组路径回溯
 - 文件：`dp/p2196mine.cpp`
 - 易错点：地窖只能从小编号走向大编号，天然形成 DAG；按输入的上三角关系枚举 `i<j`，若有边就用 `dp[j]=max(dp[j],dp[i]+a[j])` 更新累计地雷数，并同步令 `pre[j]=i`，最后从最大值所在的 `t` 递归回溯前驱再输出路径，不能只输出最大总数。
+- 状态：已完成
+
+---
+
+## Day63 - 10-27
+
+- [P1434](https://www.luogu.com.cn/problem/P1434) [SHOI2002] 滑雪
+- [P1802](https://www.luogu.com.cn/problem/P1802) 5 倍经验日
+- [P1002](https://www.luogu.com.cn/problem/P1002) [NOIP 2002 普及组] 过河卒
+- [P1049](https://www.luogu.com.cn/problem/P1049) [NOIP 2001 普及组] 装箱问题
+- [P1077](https://www.luogu.com.cn/problem/P1077) [NOIP 2012 普及组] 摆花
+
+- 知识点：网格最长路 DP、排序拓扑、0/1 背包、路径计数、障碍点判定、子集和、有限背包计数
+- 文件：`dp/p1434skiing.cpp`、`dp/p1802FiveTimesDay.cpp`、`dp/p1002RiverSoldier.cpp`、`dp/p1049FillBox.cpp`、`dp/p1077OrganizeFlowers.cpp`
+- 易错点：P1434 将格点按高度降序处理，只向更低的四邻域转移 `dp+1`，最后答案为最大边数加 1；P1802 先把每关必得的失败经验累加，再用胜负差值做 0/1 背包并在 `0..x` 取最大值，最后整体乘 5；P1002 要把马所在点和 8 个跳跃点一起禁用，按左、下来源递推路径数；P1049 用容量倒序维护可达体积，最大可达体积为 `i` 时输出 `V-i`；P1077 每种花最多取 `a[i]` 盆，倒序枚举总数并把 `dp[j-k]` 在 `k=0..min(a[i],j)` 范围求和，逐层取模避免重复使用当前种类。
 - 状态：已完成
 
 ## 知识体系
