@@ -75,6 +75,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day61 | 10-25 | 1 | 0/1 背包、动态规划 | 已完成 |
 | Day62 | 10-26 | 1 | DAG 路径 DP、路径回溯 | 已完成 |
 | Day63 | 10-27 | 5 | 网格 DP、0/1 背包、计数 DP | 已完成 |
+| Day64 | 10-28 | 1 | DP 状态转移、端点选择 | 已完成 |
 
 ---
 
@@ -825,6 +826,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：网格最长路 DP、排序拓扑、0/1 背包、路径计数、障碍点判定、子集和、有限背包计数
 - 文件：`dp/p1434skiing.cpp`、`dp/p1802FiveTimesDay.cpp`、`dp/p1002RiverSoldier.cpp`、`dp/p1049FillBox.cpp`、`dp/p1077OrganizeFlowers.cpp`
 - 易错点：P1434 将格点按高度降序处理，只向更低的四邻域转移 `dp+1`，最后答案为最大边数加 1；P1802 先把每关必得的失败经验累加，再用胜负差值做 0/1 背包并在 `0..x` 取最大值，最后整体乘 5；P1002 要把马所在点和 8 个跳跃点一起禁用，按左、下来源递推路径数；P1049 用容量倒序维护可达体积，最大可达体积为 `i` 时输出 `V-i`；P1077 每种花最多取 `a[i]` 盆，倒序枚举总数并把 `dp[j-k]` 在 `k=0..min(a[i],j)` 范围求和，逐层取模避免重复使用当前种类。
+- 状态：已完成
+
+---
+
+## Day64 - 10-28
+
+- [P3842](https://www.luogu.com.cn/problem/P3842) [TJOI2007] 线段
+
+- 知识点：DP 状态转移、端点选择、最短路径思想
+- 文件：`dp/p3842LineSegment.cpp`
+- 易错点：每一行必须从左端点或右端点离开，维护 `dp[i][0/1]` 分别表示第 `i` 行结束时停在左端/右端；转移时先加 `r-l` 这一行走过的长度，再加上一行端点到下一行端点的横向移动，最后要把第 `n` 行的终点补到边界再比较 `dp[n][0]+n-preL` 与 `dp[n][1]+n-preR`，否则会漏掉剩余纵向距离。
 - 状态：已完成
 
 ## 知识体系
