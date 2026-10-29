@@ -236,3 +236,4 @@
 - C的类型转换是(double)a
 - enum整数常量表达式，eg:`enum { MAXN = 1000005 }; int a[MAXN];`
 - `fflush`只能用来清空输出缓冲区，`fflush(stdout)`，清空输出缓冲区用`getchar`循环或`fgets`
+- c语言支持`void qsort(void *base, size_t nmemb, size_t size,int (*compar)(const void *, const void *));`

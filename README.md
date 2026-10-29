@@ -76,6 +76,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day62 | 10-26 | 1 | DAG 路径 DP、路径回溯 | 已完成 |
 | Day63 | 10-27 | 5 | 网格 DP、0/1 背包、计数 DP | 已完成 |
 | Day64 | 10-28 | 1 | DP 状态转移、端点选择 | 已完成 |
+| Day65 | 10-29 | 1 | 0/1 背包、子集划分 | 已完成 |
 
 ---
 
@@ -837,6 +838,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：DP 状态转移、端点选择、最短路径思想
 - 文件：`dp/p3842LineSegment.cpp`
 - 易错点：每一行必须从左端点或右端点离开，维护 `dp[i][0/1]` 分别表示第 `i` 行结束时停在左端/右端；转移时先加 `r-l` 这一行走过的长度，再加上一行端点到下一行端点的横向移动，最后要把第 `n` 行的终点补到边界再比较 `dp[n][0]+n-preL` 与 `dp[n][1]+n-preR`，否则会漏掉剩余纵向距离。
+- 状态：已完成
+
+---
+
+## Day65 - 10-29
+
+- [P2392](https://www.luogu.com.cn/problem/P2392) kkksc03 考前临时抱佛脚
+
+- 知识点：0/1 背包、子集和、双机并行、分组 DP
+- 文件：`dp/p2392kkksc03ForExam.cpp`
+- 易错点：每科题目必须独立划分给左右两个大脑，设总时间为 `sum`，用 0/1 背包求不超过 `sum/2` 的最大子集和 `dp[sum/2]`，该科最短完成时间是 `max(dp[sum/2], sum-dp[sum/2])`；每科调用 `solve` 前要清空 `dp`，容量倒序避免同一道题重复分配，四科结果最后相加。
 - 状态：已完成
 
 ## 知识体系
