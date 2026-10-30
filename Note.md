@@ -237,3 +237,26 @@
 - enum整数常量表达式，eg:`enum { MAXN = 1000005 }; int a[MAXN];`
 - `fflush`只能用来清空输出缓冲区，`fflush(stdout)`，清空输出缓冲区用`getchar`循环或`fgets`
 - c语言支持`void qsort(void *base, size_t nmemb, size_t size,int (*compar)(const void *, const void *));`
+- 快读模板
+    ```c
+    char buf[1 << 24];
+    int buf_pos = 0, buf_len = 0;
+
+    char get_char() {
+        if(buf_pos == buf_len){
+            buf_len = fread(buf, 1, sizeof(buf), stdin);
+            buf_pos = 0;
+            if(buf_len == 0)return EOF;
+        }
+        return buf[buf_pos++];
+    }
+
+    char read_nonspace() {
+        char c = get_char();
+        while(c != '*' && c != '?' && (c < '0' || c > '9'){
+            if(c == EOF) return EOF;
+            c = get_char();
+        }
+        return c;
+    }
+    ```
