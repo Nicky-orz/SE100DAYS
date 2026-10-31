@@ -77,7 +77,8 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day63 | 10-27 | 5 | 网格 DP、0/1 背包、计数 DP | 已完成 |
 | Day64 | 10-28 | 1 | DP 状态转移、端点选择 | 已完成 |
 | Day65 | 10-29 | 1 | 0/1 背包、子集划分 | 已完成 |
-
+| Day66 | 10-30 | 3 | 大模拟 | 已完成 |
+| Day67 | 10-31 | 1 | 分组背包、主件附件 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -851,6 +852,29 @@ This is a record about a new software engineering student, documenting his 100 d
 - 易错点：每科题目必须独立划分给左右两个大脑，设总时间为 `sum`，用 0/1 背包求不超过 `sum/2` 的最大子集和 `dp[sum/2]`，该科最短完成时间是 `max(dp[sum/2], sum-dp[sum/2])`；每科调用 `solve` 前要清空 `dp`，容量倒序避免同一道题重复分配，四科结果最后相加。
 - 状态：已完成
 
+---
+
+## Day66 - 10-30
+
+### 今天做CPL的大模拟做力竭了，不写luogu了
+
+- 知识点：雷霆大模拟
+- 文件：`oj_pratice\6-data-types\mines-2.c`、`oj_pratice\6-data-types\whac-a-mole.c`、`oj_pratice\6-data-types\redstone.c`
+- 易错点：1.读写分离；2.只读工具函数；3.状态机分析
+- 状态：已完成
+
+---
+
+## Day67 - 10-31
+
+- [P1064](https://www.luogu.com.cn/problem/P1064) [NOIP 2006 提高组] 金明的预算方案
+
+- 知识点：分组背包、0/1 背包、主件附件依赖、组合枚举
+- 文件：`dp/p1064KMsBudget.cpp`
+- 易错点：附件不能脱离主件购买，因此每个主件只枚举“主件”“主件+附件 1/2”“主件+两个附件”四种组合，组合价值为价格乘重要度之和；处理主件时容量 `j` 必须倒序更新，附件记录到所属主件的 `add` 中并跳过单独转移，避免重复购买或违反依赖。
+- 状态：已完成
+
+---
 ## 知识体系
 
 ### 数据结构
