@@ -79,6 +79,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day65 | 10-29 | 1 | 0/1 背包、子集划分 | 已完成 |
 | Day66 | 10-30 | 3 | 大模拟 | 已完成 |
 | Day67 | 10-31 | 1 | 分组背包、主件附件 | 已完成 |
+| Day68 | 11-01 | 0 | 休息 | 休息爽 |
 ---
 
 ## Day01 - 08-26
@@ -873,6 +874,12 @@ This is a record about a new software engineering student, documenting his 100 d
 - 文件：`dp/p1064KMsBudget.cpp`
 - 易错点：附件不能脱离主件购买，因此每个主件只枚举“主件”“主件+附件 1/2”“主件+两个附件”四种组合，组合价值为价格乘重要度之和；处理主件时容量 `j` 必须倒序更新，附件记录到所属主件的 `add` 中并跳过单独转移，避免重复购买或违反依赖。
 - 状态：已完成
+
+---
+
+## Day68 - 11-01
+
+- 这周太累了休息一天
 
 ---
 ## 知识体系

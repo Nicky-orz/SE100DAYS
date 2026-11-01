@@ -260,3 +260,4 @@
         return c;
     }
     ```
+- 二维数组扁平化：`#define S(r, c) state[(r) * W + (c)]`
