@@ -80,6 +80,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day66 | 10-30 | 3 | 大模拟 | 已完成 |
 | Day67 | 10-31 | 1 | 分组背包、主件附件 | 已完成 |
 | Day68 | 11-01 | 0 | 休息 | 休息爽 |
+| Day69 | 11-02 | 1 | 二叉小根堆、优先队列 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -880,6 +881,17 @@ This is a record about a new software engineering student, documenting his 100 d
 ## Day68 - 11-01
 
 - 这周太累了休息一天
+
+---
+
+## Day69 - 11-02
+
+- [P3378](https://www.luogu.com.cn/problem/P3378) 【模板】堆
+
+- 知识点：二叉小根堆、数组模拟堆、上浮与下沉
+- 文件：`heap/p3378heap.cpp`
+- 易错点：小根堆始终要求父节点不大于子节点，插入后从末尾执行 `up`，删除最小值则先将 `h[1]` 与末尾交换、缩小 `n` 再执行 `down`；下沉时必须在左右孩子中选择更小者交换，查询最小值直接取 `h[1]`，题目保证删除和查询时堆非空。
+- 状态：已完成
 
 ---
 ## 知识体系
