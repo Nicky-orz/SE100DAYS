@@ -81,6 +81,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day67 | 10-31 | 1 | 分组背包、主件附件 | 已完成 |
 | Day68 | 11-01 | 0 | 休息 | 休息爽 |
 | Day69 | 11-02 | 1 | 二叉小根堆、优先队列 | 已完成 |
+| Day70 | 11-03 | 1 | 双堆维护、第 k 小 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -894,6 +895,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 状态：已完成
 
 ---
+
+## Day70 - 11-03
+
+- [P1801](https://www.luogu.com.cn/problem/P1801) 黑匣子
+
+- 知识点：双堆维护、第 k 小、优先队列、在线查询
+- 文件：`heap/p1801blackbox.cpp`
+- 易错点：按 `t` 的非降序查询时，大根堆维护当前前 `i+1` 个最小值，小根堆维护其余元素；加入 `a[j]` 后若它小于大根堆顶就交换归堆，GET 输出大根堆顶并把小根堆最小值补入，确保堆大小对应当前排名；查询指针和加入指针必须按 `j+1==t[i]` 的时序推进，重复查询也要逐次扩充目标排名。
+- 状态：已完成
+
+---
 ## 知识体系
 
 ### 数据结构
@@ -994,6 +1006,16 @@ This is a record about a new software engineering student, documenting his 100 d
 | --- | --- |
 |普通 BST|动态有序查找|
 |AVL 树|严格平衡，查询快|
+
+#### 二叉堆
+
+- 父节点大于/小于子节点
+- 实现依赖两种操作：向上调整和向下调整
+- 插入和删除时间复杂度O(logn)
+
+| 变体 | 作用 |
+| --- | --- |
+|对顶堆|找第k小的数|
 
 ### STL
 
