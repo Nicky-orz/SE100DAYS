@@ -217,6 +217,12 @@
 - 小项先合并，可能减少低位信息的损失，但不能保证逆序对任意数据都更好
 - 浮点数相等要用`|a − b| ≤ max(abs_tol, rel_tol × max(|a|, |b|))`
 
+## Lesson8
+- 二维数组指针:`int (*whole)[3][4] = &matrix;`，声明这是一个指向多大的数组的指针
+- 多维数组指针需要多次解引用:`*(*(matrix + 1) + 5) `读取 matrix[1][5]
+- 指针数组:`int *q[3] = {&a, &b, &c};`
+- 只读指针:`int *const p = &a;`指针不能改；`const int *p = &a`不能用指针改对象
+
 # Gain From deepseek
 - `#define A B`  宏定义，作用是把代码中的A替换成B
 - `memset(a,-1,sizeof(a));`  初始化C++
