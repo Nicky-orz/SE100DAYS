@@ -83,6 +83,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day69 | 11-02 | 1 | 二叉小根堆、优先队列 | 已完成 |
 | Day70 | 11-03 | 1 | 双堆维护、第 k 小 | 已完成 |
 | Day71 | 11-04 | 1 | 小根堆、贪心合并 | 已完成 |
+| Day72 | 11-05 | 1 | 双堆维护、动态中位数 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -915,6 +916,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：小根堆、贪心、哈夫曼式合并、数组模拟优先队列
 - 文件：`heap/p1090MergingFruits.cpp`
 - 易错点：每次合并都应取当前最小的两堆，代价为 `t1+t2`，再把新堆插回小根堆并继续累计；代码通过删除堆顶、插入新和维护小根堆实现这一贪心顺序，循环条件 `n>1` 保证最终只剩一堆，不能改为任意两堆合并，否则总代价不一定最小。
+- 状态：已完成
+
+---
+
+## Day72 - 11-05
+
+- [P1168](https://www.luogu.com.cn/problem/P1168) 中位数
+
+- 知识点：双堆维护、动态中位数、优先队列、在线处理
+- 文件：`heap/p1168MiddleNumber.cpp`
+- 易错点：大根堆保存较小的一半并让堆顶成为中位数，小根堆保存较大的一半；插入后通过 `balance` 调整两堆规模，只有奇数长度前缀才把大根堆规模设为 `(i+1)/2` 并输出 `maxheap.top()`，不能在偶数前缀提前输出，也不能只按数值插入而忽略两堆大小关系。
 - 状态：已完成
 
 ---
