@@ -84,6 +84,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day70 | 11-03 | 1 | 双堆维护、第 k 小 | 已完成 |
 | Day71 | 11-04 | 1 | 小根堆、贪心合并 | 已完成 |
 | Day72 | 11-05 | 1 | 双堆维护、动态中位数 | 已完成 |
+| Day73 | 11-06 | 0 | 复习 | 大战微积分 |
 ---
 
 ## Day01 - 08-26
@@ -930,6 +931,13 @@ This is a record about a new software engineering student, documenting his 100 d
 - 状态：已完成
 
 ---
+
+## Day73 - 11-06
+
+- 微积分期中考，做题先停一天
+
+---
+
 ## 知识体系
 
 ### 数据结构
