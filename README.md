@@ -85,6 +85,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day71 | 11-04 | 1 | 小根堆、贪心合并 | 已完成 |
 | Day72 | 11-05 | 1 | 双堆维护、动态中位数 | 已完成 |
 | Day73 | 11-06 | 0 | 复习 | 大战微积分 |
+| Day74 | 11-07 | 4 | 双堆维护 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -935,6 +936,22 @@ This is a record about a new software engineering student, documenting his 100 d
 ## Day73 - 11-06
 
 - 微积分期中考，做题先停一天
+
+---
+
+## Day74 - 11-07
+
+### 考微积分，下午coding当放松，让ai出思路，人工实现，C题30分不想管了
+
+- [LGR-313 Div.2](https://www.luogu.com.cn/contest/329950) A：Su通ki信yu题ri
+- [LGR-313 Div.2](https://www.luogu.com.cn/contest/329950) B：凌云沐雨
+- [LGR-313 Div.2](https://www.luogu.com.cn/contest/329950) C：哥德巴赫猜想
+- [LGR-313 Div.2](https://www.luogu.com.cn/contest/329950) D：奶龙游戏
+
+- 知识点：排名计数、交互式有序插入、树上递归与双堆维护、组合数与模逆元
+- 文件：`competition/LGR-313-Div.2/A.cpp`、`competition/LGR-313-Div.2/B.cpp`、`competition/LGR-313-Div.2/C.cpp`、`competition/LGR-313-Div.2/D.cpp`
+- 易错点：A 按 `b[i]-i==S-1` 筛选候选值，不能把 `i` 的 1-based 排名错当成 0-based；B 每次询问后返回的 `rank` 是插入位置，需用 `ord.begin()+rank-1` 维护当前顺序；C 添加节点时要递归加入其祖先并限制总集合大小为 `n`，删除最大值后用懒删除清理双堆；D 先预处理 `C(2n,k)`，总数为 `C(2n,n)`，每项用 `Nk=(total-C(2n,n-k-1)-C(2n,k-1)) mod MOD` 再乘总数逆元，组合边界越界时必须返回 0。
+- 状态：已完成
 
 ---
 
