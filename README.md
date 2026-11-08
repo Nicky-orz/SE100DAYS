@@ -86,6 +86,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day72 | 11-05 | 1 | 双堆维护、动态中位数 | 已完成 |
 | Day73 | 11-06 | 0 | 复习 | 大战微积分 |
 | Day74 | 11-07 | 4 | 双堆维护 | 已完成 |
+| Day75 | 11-08 | 1 | 二次函数、堆、前 m 小值 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -951,6 +952,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：排名计数、交互式有序插入、树上递归与双堆维护、组合数与模逆元
 - 文件：`competition/LGR-313-Div.2/A.cpp`、`competition/LGR-313-Div.2/B.cpp`、`competition/LGR-313-Div.2/C.cpp`、`competition/LGR-313-Div.2/D.cpp`
 - 易错点：A 按 `b[i]-i==S-1` 筛选候选值，不能把 `i` 的 1-based 排名错当成 0-based；B 每次询问后返回的 `rank` 是插入位置，需用 `ord.begin()+rank-1` 维护当前顺序；C 添加节点时要递归加入其祖先并限制总集合大小为 `n`，删除最大值后用懒删除清理双堆；D 先预处理 `C(2n,k)`，总数为 `C(2n,n)`，每项用 `Nk=(total-C(2n,n-k-1)-C(2n,k-1)) mod MOD` 再乘总数逆元，组合边界越界时必须返回 0。
+- 状态：已完成
+
+---
+
+## Day75 - 11-08
+
+- [P2085](https://www.luogu.com.cn/problem/P2085) 最小函数值
+
+- 知识点：二次函数、凸函数取值、优先队列、Top-m 筛选
+- 文件：`heap/p2085MinFunctionValue.cpp`
+- 易错点：每个函数 `a*x*x+b*x+c` 的 `a>0`，最小值在顶点 `-b/(2a)` 附近，因此代码从顶点两侧分别枚举并将候选值放入大根堆；堆始终只保留全局最小的 `m` 个值，加入新值后超过 `m` 就弹出当前最大值，枚举遇到候选值不再优于堆顶即可停止，最后逆序弹出才能得到非降序结果。
 - 状态：已完成
 
 ---
