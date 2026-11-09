@@ -87,6 +87,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day73 | 11-06 | 0 | 复习 | 大战微积分 |
 | Day74 | 11-07 | 4 | 双堆维护 | 已完成 |
 | Day75 | 11-08 | 1 | 二次函数、堆、前 m 小值 | 已完成 |
+| Day76 | 11-09 | 1 | 优先队列、双向链表、贪心模拟 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -963,6 +964,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：二次函数、凸函数取值、优先队列、Top-m 筛选
 - 文件：`heap/p2085MinFunctionValue.cpp`
 - 易错点：每个函数 `a*x*x+b*x+c` 的 `a>0`，最小值在顶点 `-b/(2a)` 附近，因此代码从顶点两侧分别枚举并将候选值放入大根堆；堆始终只保留全局最小的 `m` 个值，加入新值后超过 `m` 就弹出当前最大值，枚举遇到候选值不再优于堆顶即可停止，最后逆序弹出才能得到非降序结果。
+- 状态：已完成
+
+---
+
+## Day76 - 11-09
+
+- [P1878](https://www.luogu.com.cn/problem/P1878) 舞蹈课
+
+- 知识点：优先队列、双向链表、贪心模拟、懒删除
+- 文件：`heap/p1878DancingClass.cpp`
+- 易错点：候选异性相邻对按技术差 `abs(a[x]-a[y])` 最小、左端点最小出列，删除后用 `pre/nxt` 重新连接两侧并把新异性邻居加入堆；`vis` 要同时标记两人以过滤失效候选，堆比较器的相同差值顺序决定最左优先，首尾配对时更新链表不能访问 `-1` 或 `n` 哨兵。
 - 状态：已完成
 
 ---

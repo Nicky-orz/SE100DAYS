@@ -267,3 +267,10 @@
     }
     ```
 - 二维数组扁平化：`#define S(r, c) state[(r) * W + (c)]`
+- 运算符重载：
+    ```cpp
+    bool operator<(const Node& o) const {
+        if (val != o.val) return val > o.val;
+        else return x > o.x;
+    }
+    ```
