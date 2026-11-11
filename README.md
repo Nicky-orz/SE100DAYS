@@ -89,6 +89,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day75 | 11-08 | 1 | 二次函数、堆、前 m 小值 | 已完成 |
 | Day76 | 11-09 | 1 | 优先队列、双向链表、贪心模拟 | 已完成 |
 | Day77 | 11-10 | 1 | k 叉哈夫曼树、优先队列、贪心合并 | 已完成 |
+| Day78 | 11-11 | 1 | 单调队列、懒惰标记、贪心模拟 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -991,6 +992,17 @@ This is a record about a new software engineering student, documenting his 100 d
 
 ---
 
+## Day78 - 11-11
+
+- [P2827](https://www.luogu.com.cn/problem/P2827) [NOIP 2016 提高组] 蚯蚓
+
+- 知识点：单调队列、懒惰标记、贪心模拟、队列合并
+- 文件：`heap/p2827Earthworm.cpp`
+- 易错点：每次取三条队列队首的最大值，切分后按 `maxd*u/v` 与 `maxd-x1` 分别入新队列；所有未切断蚯蚓统一增加 `q`，用 `add` 延迟维护并在入队时减去当前偏移，第二阶段输出再补回 `m*q`；初始序列和两类切分结果都保持降序，必须用三个队列而不是堆，否则会因每秒维护全体元素超时，输出时还要按第 `t` 个位置筛选。
+- 状态：已完成
+
+---
+
 ## 知识体系
 
 ### 数据结构
@@ -1079,6 +1091,7 @@ This is a record about a new software engineering student, documenting his 100 d
 |满二叉树|每个节点 0 或 2 个孩子|
 |完全二叉树|适合数组存储，堆的基础|
 |平衡二叉树|控制高度，保证效率|
+|哈夫曼树|最短前缀编码|
 
 #### 二叉搜索树 BST
 
@@ -1092,6 +1105,15 @@ This is a record about a new software engineering student, documenting his 100 d
 |普通 BST|动态有序查找|
 |AVL 树|严格平衡，查询快|
 
+#### 哈夫曼树
+
+- 树的带权路径长度（Weighted Path Length of Tree，WPL）最小
+- 构造：
+    - 初始化叶子节点
+    - 选取与合并：从节点集合 F 中选取根节点权值最小的两棵二叉树分别作为左右子树构造一棵新的二叉树，这棵新二叉树的根节点的权值为其左、右子树根结点的权值和．
+    - 从 F 中删除作为左、右子树的两棵二叉树，并将新建立的二叉树加入到 F 中
+    - 可使用堆优化构造
+
 #### 二叉堆
 
 - 父节点大于/小于子节点
@@ -1101,6 +1123,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | 变体 | 作用 |
 | --- | --- |
 |对顶堆|找第k小的数|
+|双堆+懒删除|维护TopK|
 
 ### STL
 
@@ -1128,6 +1151,12 @@ map可以用来实现并查集，哈希表，只是代价是时间复杂度从O(
 - .set(pos) pos位置1
 - 可进行位运算
 
+#### priority_queue
+
+- 优先队列、堆
+- 默认大根堆，小根堆定义：`priority_queue <int, vector<int>, greater<int>> h`
+- 结构体定义需要运算符重载
+
 ### 算法
 
 #### 模拟
@@ -1143,6 +1172,9 @@ map可以用来实现并查集，哈希表，只是代价是时间复杂度从O(
 #### 递归
 
 #### 贪心
+- 子问题最优使得全局最优
+
+#### dp
 
 #### 二分查找/二分答案
 - 模板

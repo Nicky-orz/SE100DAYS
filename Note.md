@@ -223,6 +223,22 @@
 - 指针数组:`int *q[3] = {&a, &b, &c};`
 - 只读指针:`int *const p = &a;`指针不能改；`const int *p = &a`不能用指针改对象
 
+## Lesson9
+- 解引用`*`与前缀/后缀运算符`++`同时出现，谁在后面先谁优先级高
+- `size_t`是无符号整数类型，大小自适应系统
+- `free`后要将指针置为`NULL`
+- `calloc`申请并且置为零，eg:`int *p = calloc(n, sizeof(*p));`
+- `realloc`调整已有空间，eg:
+    ```c
+    int *temp = realloc(p, new_n * sizeof(*p));
+    if (temp == NULL) {
+        return 0;
+    } else {
+        p = temp;
+    }
+
+    ```
+
 # Gain From deepseek
 - `#define A B`  宏定义，作用是把代码中的A替换成B
 - `memset(a,-1,sizeof(a));`  初始化C++
