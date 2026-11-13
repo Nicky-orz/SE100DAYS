@@ -91,6 +91,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day77 | 11-10 | 1 | k 叉哈夫曼树、优先队列、贪心合并 | 已完成 |
 | Day78 | 11-11 | 1 | 单调队列、懒惰标记、贪心模拟 | 已完成 |
 | Day79 | 11-12 | 1 | 序列合并、双堆、懒删除 | 已完成 |
+| Day80 | 11-13 | 1 | 树状数组、单点修改、区间求和 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -1011,6 +1012,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：有序序列、优先队列、双堆维护、懒删除、Top-n 筛选
 - 文件：`heap/p1631Merginglist.cpp`
 - 易错点：利用两个单调不降序列的性质，枚举每个 `a[i]` 时按 `b[j]` 递增生成和；当前和不小于集合最大值即可停止该行，因为后续和只会更大；集合始终只保留最小的 `n` 个和，删除最大值时要在小根堆中登记懒删除、删除最小值时反向登记，取堆顶前先清理失效元素，最后从小根堆依次输出。
+- 状态：已完成
+
+---
+
+## Day80 - 11-13
+
+- [P3374](https://www.luogu.com.cn/problem/P3374) 【模板】树状数组 1
+
+- 知识点：树状数组、`lowbit`、单点修改、前缀和、区间求和
+- 文件：`tree/p3374TreeArray1.cpp`
+- 易错点：树状数组下标从 1 开始，初始化也要通过 `add(i+1,a[i])` 建立；单点加法沿 `x += lowbit(x)` 更新所有包含该位置的节点，区间 `[x,y]` 要先处理反向端点，再用 `prefix(y)-prefix(x-1)` 相减，不能把前缀边界写成 `x`；每次查询都必须从当前树状数组读取，才能反映之前的修改。
 - 状态：已完成
 
 ---
