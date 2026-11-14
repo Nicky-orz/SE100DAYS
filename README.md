@@ -92,6 +92,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day78 | 11-11 | 1 | 单调队列、懒惰标记、贪心模拟 | 已完成 |
 | Day79 | 11-12 | 1 | 序列合并、双堆、懒删除 | 已完成 |
 | Day80 | 11-13 | 1 | 树状数组、单点修改、区间求和 | 已完成 |
+| Day81 | 11-14 | 1 | 树状数组、区间修改、单点查询 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -1023,6 +1024,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：树状数组、`lowbit`、单点修改、前缀和、区间求和
 - 文件：`tree/p3374TreeArray1.cpp`
 - 易错点：树状数组下标从 1 开始，初始化也要通过 `add(i+1,a[i])` 建立；单点加法沿 `x += lowbit(x)` 更新所有包含该位置的节点，区间 `[x,y]` 要先处理反向端点，再用 `prefix(y)-prefix(x-1)` 相减，不能把前缀边界写成 `x`；每次查询都必须从当前树状数组读取，才能反映之前的修改。
+- 状态：已完成
+
+---
+
+## Day81 - 11-14
+
+- [P3368](https://www.luogu.com.cn/problem/P3368) 【模板】树状数组 2
+
+- 知识点：树状数组、差分、区间加法、单点查询、加权前缀和
+- 文件：`tree/p3368TreeArray2.cpp`
+- 易错点：区间 `[l,r]` 加 `k` 要在差分树中执行 `add(l,k)` 与 `add(r+1,-k)`，不能漏掉右边界后的撤销；双树分别维护差分系数和位置加权值，前缀恢复必须使用 `(x+1)*sum(c1)-sum(c2)` 的 1-based 公式；初始化也要按单点区间更新，查询点值时通过 `rangesum(x,x)` 读取当前累计结果。
 - 状态：已完成
 
 ---
