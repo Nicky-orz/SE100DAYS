@@ -93,6 +93,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day79 | 11-12 | 1 | 序列合并、双堆、懒删除 | 已完成 |
 | Day80 | 11-13 | 1 | 树状数组、单点修改、区间求和 | 已完成 |
 | Day81 | 11-14 | 1 | 树状数组、区间修改、单点查询 | 已完成 |
+| Day82 | 11-15 | 4 | exam-1 OJ：网格模拟、栈模拟、枚举、二分贪心 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -1035,6 +1036,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：树状数组、差分、区间加法、单点查询、加权前缀和
 - 文件：`tree/p3368TreeArray2.cpp`
 - 易错点：区间 `[l,r]` 加 `k` 要在差分树中执行 `add(l,k)` 与 `add(r+1,-k)`，不能漏掉右边界后的撤销；双树分别维护差分系数和位置加权值，前缀恢复必须使用 `(x+1)*sum(c1)-sum(c2)` 的 1-based 公式；初始化也要按单点区间更新，查询点值时通过 `rangesum(x,x)` 读取当前累计结果。
+- 状态：已完成
+
+---
+
+## Day82 - 11-15
+
+### CPL期中考
+
+- 知识点：四步网格模拟、贪心顺序、相邻反应、数组压缩、超立方体枚举、二维前缀和、二分答案
+- 文件：`oj_pratice/exam-1/feast.c`、`oj_pratice/exam-1/poison.c`、`oj_pratice/exam-1/tesseract.c`、`oj_pratice/exam-1/packing.c`
+- 易错点：`feast.c` 要按上、右、下、左四个阶段依次扫描，食物被某只史莱姆吃掉后立即清零，史莱姆始终留在原格，不能把一次移动误写成连续移动；`poison.c` 每轮只按从底到顶处理相邻层，参与反应的两层本轮都不能再次使用，新产物要等下一次 `BOIL`，压缩数组时反应跳过两项但只写入一项；`tesseract.c` 两个顶点成棱当且仅当四维坐标恰有一维不同，添加缺失点只统计与现有点形成的新棱并在数量相同取编号更小者；`packing.c` 固定横线和容量后按列分别累计上下区域，某列单独超容量立即判不可行，装不下下一列时在其左侧切竖线，容量可行性单调才能二分。
 - 状态：已完成
 
 ---
