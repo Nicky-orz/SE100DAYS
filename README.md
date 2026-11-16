@@ -94,6 +94,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day80 | 11-13 | 1 | 树状数组、单点修改、区间求和 | 已完成 |
 | Day81 | 11-14 | 1 | 树状数组、区间修改、单点查询 | 已完成 |
 | Day82 | 11-15 | 4 | exam-1 OJ：网格模拟、栈模拟、枚举、二分贪心 | 已完成 |
+| Day83 | 11-16 | 1 | 配对统计、离线排序、树状数组 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -1047,6 +1048,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：四步网格模拟、贪心顺序、相邻反应、数组压缩、超立方体枚举、二维前缀和、二分答案
 - 文件：`oj_pratice/exam-1/feast.c`、`oj_pratice/exam-1/poison.c`、`oj_pratice/exam-1/tesseract.c`、`oj_pratice/exam-1/packing.c`
 - 易错点：`feast.c` 要按上、右、下、左四个阶段依次扫描，食物被某只史莱姆吃掉后立即清零，史莱姆始终留在原格，不能把一次移动误写成连续移动；`poison.c` 每轮只按从底到顶处理相邻层，参与反应的两层本轮都不能再次使用，新产物要等下一次 `BOIL`，压缩数组时反应跳过两项但只写入一项；`tesseract.c` 两个顶点成棱当且仅当四维坐标恰有一维不同，添加缺失点只统计与现有点形成的新棱并在数量相同取编号更小者；`packing.c` 固定横线和容量后按列分别累计上下区域，某列单独超容量立即判不可行，装不下下一列时在其左侧切竖线，容量可行性单调才能二分。
+- 状态：已完成
+
+---
+
+## Day83 - 11-16
+
+- [P5677](https://www.luogu.com.cn/problem/P5677) [GZOI2017] 配对统计
+
+- 知识点：排序、相邻配对、离线查询、树状数组、偏序统计
+- 文件：`tree/p5677PairAccounting.cpp`
+- 易错点：先按数值排序，每个元素只需比较排序后左右相邻差值：右间隙不小于左间隙时加入左配对，右间隙不大于左间隙时加入右配对，首尾只能取唯一邻居；候选对和询问都按左端点降序处理，加入所有 `l>=query.l` 的配对后用树状数组统计 `r<=query.r`，最后按询问编号加权累加，不能把原下标排序后的位置混淆。
 - 状态：已完成
 
 ---
