@@ -238,6 +238,40 @@
     }
 
     ```
+-   |目标|函数|返回值|
+    |---|---|---|
+    |首/末字符|strchr/strrchr|char*|
+    |用分割符切开的下一个词|strtok|char*|
+    |复制或追加|strcpy/strcat|?|
+
+## Lesson10
+- 函数指针
+    ```c
+    int Abs(int x) {
+        return x < 0 ? -x : x;
+    }
+    int (*f)(int) = Abs;
+    printf("%d\n", f(-100));
+    printf("%d\n", (*f)(-100));//*f(x) 会先调用，再解引用返回值
+    ```
+- 函数指针数组
+    ```c
+    int x = 100, y = 200;
+    int *fx1(void) { return &x; }
+    int *fx2(void) { return &y; }
+    int *(*g[])(void) = {fx1, fx2};
+    printf("%d\n", *g[1]()); // 200
+    ```
+- 顺时针解读法
+    - `void (*(*g(void))(int))(char);`
+    - 1.这条是"函数返回函数指针"的经典套娃。从 g 出发：
+    - 2.g 后紧跟 (void) → g 是函数，无参数；
+    - 3.往外遇 * → 返回指针；
+    - 4.遇 (int) → 指向接受 int 的函数；
+    - 5.再遇 * → 该函数返回指针；
+    - 6.再遇 (char) → 指向接受 char 的函数；
+    - 7.最后 void → 返回 void
+- `typedef 已有的类型  新名字;`注意新名字在"变量名该在的位置"上
 
 # Gain From deepseek
 - `#define A B`  宏定义，作用是把代码中的A替换成B
@@ -290,3 +324,4 @@
         else return x > o.x;
     }
     ```
+- 消除所有逆序对的过程就是排序的过程
