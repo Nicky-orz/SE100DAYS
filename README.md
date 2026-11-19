@@ -97,6 +97,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day83 | 11-16 | 1 | 配对统计、离线排序、树状数组 | 已完成 |
 | Day84 | 11-17 | 1 | 排序、排名映射、逆序对、树状数组 | 已完成 |
 | Day85 | 11-18 | 1 | 滑动窗口、优先队列 | 已完成 |
+| Day86 | 11-19 | 1 | 树状数组、区间相交、动态维护 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -1087,6 +1088,17 @@ This is a record about a new software engineering student, documenting his 100 d
 
 ---
 
+## Day86 - 11-19
+
+- [P2161](https://www.luogu.com.cn/problem/P2161) [SHOI2009] 会场预约
+
+- 知识点：树状数组、区间相交、动态集合维护、顺序统计
+- 文件：`tree/p2161MeetingRoomBooking.cpp`
+- 易错点：维护的是当前未被拒绝的预约，`A a b` 要删除所有满足起点不大于 `b` 且终点不小于 `a` 的区间；代码用树状数组统计活跃起点，通过 `kth(sum(b))` 从右向左检查并删除，遇到 `R[p] < a` 即可停止，再插入新区间并用 `cnt += 1-removed` 更新数量，`B` 直接输出当前 `cnt`。
+- 状态：已完成
+
+---
+
 ## 知识体系
 
 ### 数据结构
@@ -1208,6 +1220,17 @@ This is a record about a new software engineering student, documenting his 100 d
 | --- | --- |
 |对顶堆|找第k小的数|
 |双堆+懒删除|维护TopK|
+
+#### 树状数组
+
+- c[x] 存储 [𝑥 −lowbit⁡(𝑥) +1,𝑥] 的值
+- 解决单点（或差分点）更新 + 前缀查询（或两个前缀相减）
+    - 单点修改 + 区间和
+    - 逆序对
+    - 动态第 k 小
+    - 差分后区间加
+    - 扫描线降维
+- 时间复杂度O(logn)
 
 ### STL
 
