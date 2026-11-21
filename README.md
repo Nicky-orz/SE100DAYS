@@ -99,6 +99,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day85 | 11-18 | 1 | 滑动窗口、优先队列 | 已完成 |
 | Day86 | 11-19 | 1 | 树状数组、区间相交、动态维护 | 已完成 |
 | Day87 | 11-20 | 1 | 最长子序列、树状数组优化 DP | 已完成 |
+| Day88 | 11-21 | 1 | 双指针、滑动窗口、区间覆盖 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -1107,6 +1108,17 @@ This is a record about a new software engineering student, documenting his 100 d
 - 知识点：最长不升子序列、最长递增子序列、树状数组优化 DP
 - 文件：`dp/p1020InterceptMissile.cpp`
 - 易错点：单套系统对应从后往前求允许相等的最长不升子序列，查询 `Max(a[i])` 后转移为 `+1`；最少系统数用正序严格递增子序列覆盖，必须查询 `Max(a[i]-1)` 排除相等高度。两次 DP 共用树状数组但中间要清零，`ans1` 与 `ans2` 分别输出两问，不能混用扫描方向或把不升误写成严格下降。
+- 状态：已完成
+
+---
+
+## Day88 - 11-21
+
+- [P1638](https://www.luogu.com.cn/problem/P1638) 逛画展
+
+- 知识点：双指针、滑动窗口、画师计数、区间覆盖
+- 文件：`linealist/p1638VisitingArtExhibition.cpp`
+- 易错点：窗口必须覆盖全部 `m` 位画师，先按右指针扩展到首次满足覆盖的右端，再以左指针逐步收缩；左端画师计数减至 0 时，右指针继续向右寻找该画师的下一幅，不能只移动左端后直接假定窗口仍完整；区间长度比较时用 `B-T`，答案输出是 1-based 的 `T+1` 和 `B+1`，若同长度但左端更大，代码的更新逻辑仍需保证保留最小左端。
 - 状态：已完成
 
 ---
