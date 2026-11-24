@@ -102,6 +102,7 @@ This is a record about a new software engineering student, documenting his 100 d
 | Day88 | 11-21 | 1 | 双指针、滑动窗口、区间覆盖 | 已完成 |
 | Day89 | 11-22 | 1 | 树状数组、排名统计、在线查询 | 已完成 |
 | Day90 | 11-23 | 1 | 分组统计、奇偶分类、贡献展开 | 已完成 |
+| Day91 | 11-24 | 2 | 单调栈、最大矩形、柱状图 | 已完成 |
 ---
 
 ## Day01 - 08-26
@@ -1147,6 +1148,18 @@ This is a record about a new software engineering student, documenting his 100 d
 
 ---
 
+## Day91 - 11-24
+
+- [P2866](https://www.luogu.com.cn/problem/P2866) [USACO06NOV] Bad Hair Day S
+- [P4147](https://www.luogu.com.cn/problem/P4147) 玉蟾宫
+
+- 知识点：单调栈、最大矩形、柱状图、路径压缩式边界扩展
+- 文件：`linealist/p2866BadHairDayS.cpp`、`dp/p4147FrogPalace.cpp`
+- 易错点：P2866 从左到右维护递减栈，遇到不低于栈顶的牛就结算其两侧间距 `i-s.top()-1`，相等高度也必须弹出；末尾加入高于所有牛的哨兵才能统一清空，并用 `long long` 累加。P4147 悬线法，先按行累加每列连续 F 的高度，再分别向左右跳过不高于当前高度的柱子，矩形面积为 `(r-l+1)*up`，输入下标从 0 开始时首行访问 `i-1` 依赖全局数组默认清零，最终最大面积还要乘 3。
+- 状态：已完成
+
+---
+
 ## 知识体系
 
 ### 数据结构
@@ -1276,6 +1289,7 @@ This is a record about a new software engineering student, documenting his 100 d
     - 单点修改 + 区间和
     - 逆序对
     - 动态第 k 小
+    - 前驱/后继
     - 差分后区间加
     - 扫描线降维
 - 时间复杂度O(logn)
